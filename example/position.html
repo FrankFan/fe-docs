@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position layout</title>
+  <style>
+    body { margin: 0;}
+    div {
+      height: 100px;
+      width: 100px;
+      background: #ccc;
+    }
+
+    .offset {
+      position: relative;
+      top: 20px;
+      left: 20px;
+      background: tan;
+    }
+
+    section {
+      position: relative;
+    }
+
+    .offset2 {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1;
+    }
+
+    .fixed {
+      height: 100px;
+      width: 100px;
+      background:tan;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .sticky {
+      height: 100px;
+      background: thistle;
+      position: sticky;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <div class="offset">relative</div>
+  <div></div>
+
+  <section>
+    <div class="offset2">absolute</div>
+  </section>
+
+  <section class="fixed">
+    fixed
+  </section>
+
+  <section class="sticky">
+    sticky
+  </section>
+</body>
+</html>
