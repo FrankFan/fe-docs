@@ -6,7 +6,6 @@
     * [网页的基本结构](docs/html2.md)
     * [网页元素](docs/html3.md)
 * [CSS](docs/css.md)
-    * [CSS入门](docs/css1.md)
     * [选择器](docs/css-selector.md)
     * [盒模型](docs/box.md)
     * [布局](docs/layout.md)

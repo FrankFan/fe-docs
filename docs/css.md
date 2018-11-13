@@ -2,3 +2,16 @@
 
 CSS 的全称是  Cascading Style Sheet，中文名是级联样式表，也有叫做层叠样式表的，主要是用来控制网页的显示风格。
 
+
+## todo
+
+- Uniform Resource Locators (aka URLs) hash#
+- Hypertext Transfer Protocol (aka HTTP)
+- Hyper Text Markup Language (aka HTML)
+- Cascading Style Sheets (aka CSS)
+- JavaScript Programming Language (aka ECMAScript 262)
+- JavaScript Object Notation (aka JSON)
+- Document Object Model (aka DOM)
+- Chrome Developer Tools
+- https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Details_of_the_Object_Model
+
