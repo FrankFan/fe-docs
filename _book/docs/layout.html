@@ -433,6 +433,8 @@
 <p>&#x6700;&#x521D; float &#x5C5E;&#x6027;&#x662F;&#x8BBE;&#x8BA1;&#x7528;&#x6765;&#x5B9E;&#x73B0;&#x6587;&#x5B57;&#x73AF;&#x7ED5;&#x56FE;&#x7247;&#x6548;&#x679C;&#x7684;&#x3002;&#x7ED9;&#x56FE;&#x7247;&#x8BBE;&#x7F6E;float&#x5C5E;&#x6027;&#xFF0C;&#x6240;&#x6709;&#x56F4;&#x7ED5;&#x56FE;&#x7247;&#x7684;&#x5185;&#x5BB9;&#x5C31;&#x4F1A;&#x81EA;&#x7136;&#x7684;&#x73AF;&#x7ED5;&#x7740;&#x5B83;&#x3002;&#x5C3D;&#x7BA1;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x5728;&#x56FE;&#x7247;&#x4E2D;&#x7528;&#x8D77;&#x6765;&#x5F88;&#x68D2;&#xFF0C;&#x4F46;&#x662F; float &#x5C5E;&#x6027;&#x4ECE;&#x6765;&#x4E0D;&#x662F;&#x7528;&#x4E8E;&#x8FDB;&#x884C;&#x5E03;&#x5C40;&#x548C;&#x5B9A;&#x4F4D;&#x7684;&#xFF0C;&#x8FD9;&#x6837;&#x505A;&#x7684;&#x7684;&#x8BDD;&#x4F1A;&#x5E26;&#x6765;&#x4E00;&#x4E9B;&#x5947;&#x602A;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
 <p><a href="https://learn.shayhowe.com/html-css/positioning-content/" target="_blank">https://learn.shayhowe.com/html-css/positioning-content/</a></p>
 <h2 id="flex">flex</h2>
+<h2 id="bfc-&#x2014;-block-formatting-context">BFC &#x2014; Block formatting context</h2>
+<h2 id="ifc-&#x2014;-inline-formatting-context">IFC &#x2014; Inline formatting context</h2>
 
                                 
                                 </section>
@@ -476,7 +478,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"布局","level":"1.3.3","depth":2,"next":{"title":"动画","level":"1.3.4","depth":2,"path":"docs/animation.md","ref":"docs/animation.md","articles":[]},"previous":{"title":"盒模型","level":"1.3.2","depth":2,"path":"docs/box.md","ref":"docs/box.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/layout.md","mtime":"2018-09-29T11:06:29.793Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-13T10:09:24.529Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"布局","level":"1.3.3","depth":2,"next":{"title":"动画","level":"1.3.4","depth":2,"path":"docs/animation.md","ref":"docs/animation.md","articles":[]},"previous":{"title":"盒模型","level":"1.3.2","depth":2,"path":"docs/box.md","ref":"docs/box.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/layout.md","mtime":"2018-11-14T07:58:20.316Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-14T07:57:24.394Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -484,6 +486,10 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
