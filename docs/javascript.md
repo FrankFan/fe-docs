@@ -54,6 +54,23 @@ Object.prototype.toString.call({}) === '[object Object]'
 Object.prototype.toString.call([]) === '[object Array]'
 Object.prototype.toString.call(obj) === '[object Number]'
 Object.prototype.toString.call(/^$/) === '[object RegExp]'
+
+
+function isType(type) {
+  return function(obj){
+    return Object.prototype.toString.call(obj) === '[object '+ type +']';
+  }
+}
+
+var isNumber = isType('Number');
+
+console.log(isNumber(1));
+console.log(isNumber('s'));
+
+var isArray = isType('Array');
+
+console.log(isArray(1));
+console.log(isArray([1, 2, 3]));
 ```
 
 ### 类型转换
@@ -533,4 +550,26 @@ push(arr, 2);
 push(arr, 3);
 
 console.log(arr);  // 1 2 3
+```
+
+## URI
+
+![](./imgs/url.png)
+
+
+```js
+function getQueryObject(url) {
+  url = url == null ? window.location.href : url;
+  var search = url.substring(url.lastIndexOf("?") + 1);
+  var obj = {};
+  var reg = /([^?&=]+)=([^?&=]*)/g;
+  search.replace(reg, function (rs, $1, $2){
+    var name = decodeURIComponent($1);
+    var val = decodeURIComponent($2);
+    val = String(val);
+    obj[name] = val;
+    return rs;
+  });
+  return obj;
+}
 ```
