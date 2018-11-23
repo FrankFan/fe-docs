@@ -1,0 +1,24 @@
+{
+  "name": "fe-docs",
+  "version": "1.0.0",
+  "description": "![](https://frontendmasters.com/books/front-end-handbook/2017/images/web-tech-employed.jpg)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrankFan/fe-docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrankFan/fe-docs/issues"
+  },
+  "homepage": "https://github.com/FrankFan/fe-docs#readme"
+}

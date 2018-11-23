@@ -17,4 +17,5 @@
     * [Todo1 - Vue & ES6](docs/todo-vue1.md)
     * [Todo2 - React & Es6](docs/todo-react.md)
 * [WebKit技术内幕](docs/webkit-inside.md)
+* [Mac安装](docs/mac.md)
 
