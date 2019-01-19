@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
-    "dev": "webpack-dev-server --hot --inline --progress",
-    "build": "webpack --config webpack.config.js",
+    "dev": "webpack-dev-server --hot --inline --progress --mode development",
+    "build": "webpack --mode production --config webpack.config.js",
     "test": "mocha --require @babel/register",
     "test:watch": "mocha --require @babel/register --watch",
     "debug": "mocha --require @babel/register --inspect-brk"
@@ -23,6 +23,7 @@
     "chai": "^4.2.0",
     "css-loader": "^2.1.0",
     "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
     "mocha": "^5.2.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
