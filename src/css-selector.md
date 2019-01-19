@@ -6,5 +6,18 @@
 
 ![](https://ws4.sinaimg.cn/large/006tNbRwgy1fx6ime1mfij30kp08k0tz.jpg)
 
+## 一、基本选择器
+1. 通配选择器*
 
 
+## 二、层次选择器
+
+## 三、伪类选择器
+
+## 四、伪元素
+
+## 五、属性选择器
+
+
+http://www.cnblogs.com/skylar/p/css3-selector.html
+http://www.cnblogs.com/webblog/archive/2009/07/07/1518274.html

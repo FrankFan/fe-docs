@@ -1,0 +1,51 @@
+// http://www.cnblogs.com/lhb25/p/inside-block-formatting-ontext.html
+
+.bfc {
+  width: 300px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+
+  .aside {
+    width: 100px;
+    height: 150px;
+    line-height: 150px;
+    background: #f66;
+    float: left;
+  }
+
+  .main {
+    height: 200px;
+    line-height: 200px;
+    background: #fcc;
+    overflow: hidden;
+  }
+}
+
+.clear-float {
+  border: 5px solid #fcc;
+  width: 300px;
+  overflow: hidden;
+
+  .child {
+    border: 5px solid #f66;
+    width:100px;
+    height: 100px;
+    float: left;
+  }
+}
+
+.margin-collapse {
+  border: 2px solid greenyellow;
+  .wrap {
+    overflow: hidden;
+  }
+  p {
+    color: #f55;
+    background: #fcc;
+    width: 200px;
+    line-height: 100px;
+    text-align: center;
+    margin: 100px;
+  }
+}

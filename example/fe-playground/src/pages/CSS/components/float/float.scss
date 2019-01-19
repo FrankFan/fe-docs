@@ -1,0 +1,45 @@
+// CSS float 介绍
+// http://www.cnblogs.com/iyangyuan/archive/2013/03/27/2983813.html
+// http://www.cnblogs.com/langjt/p/4281477.html
+
+.float {
+  color: gray;
+  .play {
+    .div1 {
+      background-color: aquamarine;
+      width: 200px;
+      height: 50px;
+    }
+    .div2 {
+      background-color: blueviolet;
+      width: 150px;
+      height: 50px;
+      float: left;
+    }
+    .div3 {
+      background-color: chocolate;
+      width: 250px;
+      height: 50px;
+      float: left;
+    }
+    .div4 {
+      background-color: yellowgreen;
+      width: 450px;
+      height: 50px;
+      float: left;
+    }
+    .div5 {
+      background-color: red;
+      width: 850px;
+      height: 50px;
+    }
+  }
+
+  .clearfix {
+    &::after {
+      content: '';
+      clear: both;
+      display: block;
+    }
+  }
+}

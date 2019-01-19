@@ -1,0 +1,49 @@
+.position-content {
+  height: 5000px;
+  .normal {
+    height: 100px;
+    width: 100px;
+    background: #ccc;
+  }
+
+  .offset {
+    position: relative;
+    top: 20px;
+    left: 80px;
+    background: tan;
+    width: 300px;
+    height: 150px;
+  }
+
+  section {
+    position: relative;
+  }
+
+  .section-offset2 {
+    .offset2 {
+      position: absolute;
+      top: 20px;
+      right: 50px;
+      z-index: 1;
+      width: 100px;
+      height: 100px;
+      background: #fcc;
+    }
+  }
+
+  .fixed {
+    height: 100px;
+    width: 100px;
+    background:tan;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .sticky {
+    height: 50px;
+    background: thistle;
+    position: sticky;
+    top: 0;
+  }
+}
