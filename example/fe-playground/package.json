@@ -12,6 +12,10 @@
     "debug": "mocha --require @babel/register --inspect-brk"
   },
   "author": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
   "license": "ISC",
   "keywords": [],
   "devDependencies": {

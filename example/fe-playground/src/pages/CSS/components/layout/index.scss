@@ -1,0 +1,13 @@
+.layout-content {
+  height: 100%;
+  .wrap {
+    height: 100%;
+    .square {
+      width: 50%;
+      height: 50%;
+      background: #fcc;
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+}

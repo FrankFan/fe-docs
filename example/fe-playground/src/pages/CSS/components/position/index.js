@@ -25,4 +25,3 @@ export default class Position extends React.Component {
     );
   }
 }
-console.log('this is float.js 00');

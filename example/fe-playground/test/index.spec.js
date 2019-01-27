@@ -7,7 +7,15 @@ import {
   unique3,
   intersect,
   difference,
-} from '../src/utis/arrayUtil';
+} from '../src/utils/arrayUtil';
+
+import {
+  getMaxDuplicate,
+  hiuwen,
+  fibonacci,
+  getMaxDiff,
+  getRandomStrByNum,
+} from '../src/utils/algorithm';
 
 const arrTest = [2, 4, 1, 5, 6, 2, 6, 5, 0];
 const arrTest2 = [7, 6, 2, 0];
@@ -46,4 +54,49 @@ describe('Array 数组操作', function() {
       expect(unique3(result)).to.eql([1,4,5]);
     });
   });
+});
+
+describe('算法题', function() {
+  describe('1.寻找出现次数做多的元素', function() {
+    it('getMaxDuplicate', () => {
+      const result = getMaxDuplicate('abz901idad8anziaqa2a');
+      expect(result).to.equal(6);
+    });
+  });
+
+  describe('2.判断是不是回文', () => {
+    it('hiuwen', () => {
+      // const huiwenStr = 'madam';
+      const huiwenStr = '奶牛奶';
+      const result = hiuwen(huiwenStr);
+      expect(result).to.be.true;
+    });
+  });
+
+  describe('3. fibonacci', () => {
+    it('N 阶 fibonacci', () => {
+      const target = [ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 ];
+      const result  = fibonacci(10);
+      expect(result).to.eql(target);
+    });
+  });
+
+  describe('4. getMaxDiff', () => {
+    it('求一个正数组中的最大差值', () => {
+      let arr = [8,9,1,2,1,0,6];
+      const result = getMaxDiff(arr);
+      console.log(result);
+      expect(result).to.equal(9);
+    });
+  });
+
+  describe('5. getRandomStrByNum', () => {
+    it('随机生成指定长度的字符串', () => {
+      const result = getRandomStrByNum(8);
+      expect(result.length).to.equal(8);
+      console.log(result);
+    });
+  });
+
+
 });
