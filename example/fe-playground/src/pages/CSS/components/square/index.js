@@ -19,7 +19,7 @@ export default class Square extends React.Component {
           </div>
         </section>
         <section className="margin">
-123123
+          123123
         </section>
       </div>
     );
