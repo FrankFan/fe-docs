@@ -1,3 +1,6 @@
+// https://juejin.im/entry/59a5a194f265da24734447f2
+// https://segmentfault.com/a/1190000007665361
+
 function jsonp(url, options = { timeout: 3000}) {
   const timeout = options.timeout;
   let timerId;
@@ -27,6 +30,19 @@ function jsonp(url, options = { timeout: 3000}) {
 
 function generateJsonpCallback() {
   return `jsonpcallback_${Date.now()}_${Math.floor(Math.random() * 100000)}`;
+}
+
+function getSrcUrl(url, data) {
+  let _url = _url + (url.indexOf('?') < 0 ? '?' : '&');
+  let arrQueryString = [];
+  if (typeof data === 'string') {
+    arrQueryString.push(data);
+  } else {
+    for(let key in data) {
+      // TODO
+      // arrQueryString.push();
+    }
+  }
 }
 
 function removeScript(id) {
