@@ -40,7 +40,6 @@ EventEmitter.prototype.emit = function (event) {
   }
 };
 
-
 EventEmitter.prototype.once = function(event, listener) {
   this.on(event, function g() {
     this.off(event, g);
