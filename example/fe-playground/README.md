@@ -39,3 +39,12 @@ webpack.config.js
 
 Javascript 中的模块可以是 CommonJS 模块， 也可以是 ES6 模块。因为在 webpack 本身只会处理模块，所以所有非js的资源也会被包装成module。因此假如你想使用 .scss、.png 文件的话，你需要在js文件中导入（import、require）他们。
 
+
+```js
+JS: React, Redux, TypeScript/Flow, ES6/7
+Styling/UI Libs: emotion, styled-components, inline styles
+Testing: Enzyme, Mocha/Jasmine/Jest, Cypress
+Build: Webpack, Yarn
+Workflow/Styleguide: React Storybook
+We also plan to use Relay (+ GraphQL) and React Native in the future.
+```

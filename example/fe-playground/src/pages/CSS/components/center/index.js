@@ -1,5 +1,5 @@
 import React from 'react';
-import './center.scss';
+import './index.scss';
 
 export default class Center extends React.Component {
   render() {
@@ -32,4 +32,3 @@ export default class Center extends React.Component {
     );
   }
 }
-console.log('this is float.js 00');

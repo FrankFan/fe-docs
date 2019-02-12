@@ -77,7 +77,10 @@ module.exports = (noting, argv) => {
     },
     devServer: {
       port: 9000,
-      hot: true
+      hot: true,
+      historyApiFallback: {
+        index: 'page-css.html'
+      }
     },
     optimization: {
       splitChunks: {

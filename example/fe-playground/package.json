@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
-    "dev": "webpack-dev-server --hot --inline --progress --mode development",
+    "dev": "webpack-dev-server --hot --inline --progress --history-api-fallback --mode development",
     "build": "webpack --mode production --config webpack.config.js",
     "test": "mocha --require @babel/register",
     "test:watch": "mocha --require @babel/register --watch",

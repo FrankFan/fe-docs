@@ -42,4 +42,95 @@
       display: block;
     }
   }
+
+  .float2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid saddlebrown;
+
+    .surround {
+      img {
+        float: left;
+      }
+    }
+  }
+
+  .example {
+    border: 1px solid fuchsia;
+    width: 200px;
+    margin-bottom: 50px;
+    .father {
+      img {
+        float: left;
+      }
+    }
+    .animal {
+      margin-left: -100px;
+      &::first-line {
+        background: red;
+        color: white;
+      }
+    }
+  }
+
+  .w3c-example {
+    border: 1px solid #ccc;
+    div {
+      width: 100px;
+      height: 100px;
+      border: 1px dashed #fcc;
+      &:nth-child(1) {
+        float: left;
+        color: red;
+      }
+      &:nth-child(2) {
+        // float: left;
+      }
+    }
+  }
+
+  .w3c-example2 {
+    border: 1px solid #ccc;
+    div {
+      width: 100px;
+      height: 100px;
+      border: 1px dashed #fcc;
+      float: left;
+      background: antiquewhite;
+    }
+    p {
+      margin: 10px 0 0 0;
+      padding: 10px;
+      background: #ccc;
+      &:last-child {
+        margin-top: 50px;
+        clear: both;
+      }
+    }
+  }
+
+  .w3c-example3 {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    .news {
+      border: 1px dashed black;
+      background-color: gray;
+      color: white;
+      img {
+        float: left;
+      }
+      p {
+        float: right;
+      }
+      .clear {
+        // clear: both; // 引入无意义的dom,最好不用这种方式
+      }
+    }
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  }
 }

@@ -19,6 +19,11 @@ export default class Center extends React.Component {
             <p>haha</p>
           </div>
         </div>
+        <div className="only-abs">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
       </div>
     );
   }

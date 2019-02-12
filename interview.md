@@ -14,8 +14,8 @@ webpack插件机制，写一个
 CDN调优、搭建
 
 http缓存
--
--
+- 协商缓存
+- 强缓存
 
 url request 流程
 - DNS解析
