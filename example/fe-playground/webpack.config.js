@@ -2,6 +2,11 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const htmlMinifyConfig = {
+  collapseWhitespace: true,
+  removeComments: true,
+}
+
 module.exports = (noting, argv) => {
   console.log(`mode = ${argv.mode}`)
   const isProduction = argv.mode === 'production';
@@ -11,13 +16,15 @@ module.exports = (noting, argv) => {
       title: 'css基础',
       filename: 'page-css.html',
       template: `${__dirname}/template.html`,
-      chunks: ['page-css', 'common', 'runtime']
+      chunks: ['page-css', 'common', 'runtime'],
+      minify: isProduction ? htmlMinifyConfig : {},
     }),
     new HtmlWebpackPlugin({
       title: 'js基础',
       filename: 'page-js.html',
       template: `${__dirname}/template.html`,
-      chunks: ['page-js', 'common', 'runtime']
+      chunks: ['page-js', 'common', 'runtime'],
+      minify: isProduction ? htmlMinifyConfig : {},
     }),
   ];
 
@@ -78,9 +85,8 @@ module.exports = (noting, argv) => {
     devServer: {
       port: 9000,
       hot: true,
-      historyApiFallback: {
-        index: 'page-css.html'
-      }
+      open: true,
+      openPage: 'page-css.html',
     },
     optimization: {
       splitChunks: {
