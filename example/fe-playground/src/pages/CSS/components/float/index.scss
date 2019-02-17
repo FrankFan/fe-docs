@@ -4,7 +4,36 @@
 
 .float {
   color: gray;
+
+  .example1 {
+    border: 1px dashed forestgreen;
+    margin-bottom: 30px;
+    .div1 {
+      background-color: aquamarine;
+      width: 200px;
+      height: 50px;
+    }
+    .div2 {
+      background-color: blueviolet;
+      width: 150px;
+      height: 150px;
+      float: right;
+    }
+    .div3 {
+      background-color: chocolate;
+      width: 250px;
+      height: 50px;
+    }
+    .div4 {
+      background-color: yellow;
+      width: 450px;
+      height: 50px;
+    }
+  }
+
+
   .play {
+    display: none;
     .div1 {
       background-color: aquamarine;
       width: 200px;

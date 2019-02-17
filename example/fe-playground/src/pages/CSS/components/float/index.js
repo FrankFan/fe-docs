@@ -1,10 +1,16 @@
 import React from 'react';
-import './float.scss';
+import './index.scss';
 
 export default class Float extends React.Component {
   render() {
     return (
       <section className="float">
+        <section className="example1">
+          <div className="div1">div1</div>
+          <div className="div2">div2</div>
+          <div className="div3">div3</div>
+          <div className="div4">div4</div>
+        </section>
         <div className="play clearfix">
           <div className="div1">div1</div>
           <div className="div2">div2</div>

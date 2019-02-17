@@ -82,6 +82,11 @@ module.exports = (noting, argv) => {
         ]
       }]
     },
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, 'src/'),
+      }
+    },
     devServer: {
       port: 9000,
       hot: true,

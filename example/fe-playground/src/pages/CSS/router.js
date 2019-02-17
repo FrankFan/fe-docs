@@ -3,8 +3,8 @@ import { HashRouter, Route, Switch } from "react-router-dom";
 
 import NoMatch from '../../common/components/NoMatch';
 import HomePage from './components/home/';
-import FloatPage from './components/float/float';
-import BFCPage from './components/BFC/bfc';
+import FloatPage from './components/float/';
+import BFCPage from './components/BFC/';
 import CenterPage from './components/center/';
 import PositionPage from './components/position/';
 import LayoutPage from './components/layout/';

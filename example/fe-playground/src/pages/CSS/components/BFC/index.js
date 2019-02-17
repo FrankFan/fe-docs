@@ -1,5 +1,5 @@
 import React from 'react';
-import './bfc.scss';
+import './index.scss';
 
 export default class Center extends React.Component {
   render() {
