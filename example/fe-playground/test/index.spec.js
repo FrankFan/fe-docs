@@ -17,10 +17,19 @@ import {
   getRandomStrByNum,
 } from '../src/utils/algorithm';
 
+import {
+  parse,
+  getQueryByName,
+  getQueryByName2,
+  getQueryByName3,
+} from '../src/utils/querystring';
+
+// variables
 const arrTest = [2, 4, 1, 5, 6, 2, 6, 5, 0];
 const arrTest2 = [7, 6, 2, 0];
 const arrTarget = [0, 1, 2, 4, 5, 6];
 const arrTarget2 = [0, 2, 6];
+const url = 'https://www.baidu.com/s?wd=s&rsv_spt=1&rsv_iqid=0xd6450b3b000d69f0&issp=1&f=3&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_sug3=1&rsv_sug1=1&rsv_sug7=100&rsv_sug2=0&prefixsug=s&rsp=2&inputT=117&rsv_sug4=117';
 
 describe('Array 数组操作', function() {
   describe('1.数组去重', function() {
@@ -85,7 +94,6 @@ describe('算法题', function() {
     it('求一个正数组中的最大差值', () => {
       let arr = [8,9,1,2,1,0,6];
       const result = getMaxDiff(arr);
-      console.log(result);
       expect(result).to.equal(9);
     });
   });
@@ -94,9 +102,33 @@ describe('算法题', function() {
     it('随机生成指定长度的字符串', () => {
       const result = getRandomStrByNum(8);
       expect(result.length).to.equal(8);
-      console.log(result);
     });
   });
+});
 
 
+describe('utility', () => {
+  describe('1. querystring', () => {
+    it('1）parse query string', () => {
+      const result = parse(url);
+    });
+
+    it('2） get query string by name', () => {
+      const name = 'ie';
+      const result = getQueryByName(url, name);
+      expect(result).to.eql('utf-8');
+    });
+
+    it('3） get query string by name 2 (regex)', () => {
+      const name = 'ie';
+      const result = getQueryByName2(url, name);
+      expect(result).to.eql('utf-8');
+    });
+
+    it('4） get query string by name 2 (split)', () => {
+      const name = 'ie';
+      const result = getQueryByName3(url, name);
+      expect(result).to.eql('utf-8');
+    });
+  });
 });

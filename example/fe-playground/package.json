@@ -9,7 +9,7 @@
     "build": "webpack --mode production --config webpack.config.js",
     "test": "mocha --require @babel/register",
     "test:watch": "mocha --require @babel/register --watch",
-    "debug": "mocha --require @babel/register --inspect-brk"
+    "test:debug": "mocha --require @babel/register --inspect-brk"
   },
   "author": "",
   "repository": {
