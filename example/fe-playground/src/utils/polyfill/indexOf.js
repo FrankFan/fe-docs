@@ -19,5 +19,6 @@ if (typeof Array.prototype.indexOf === 'function') {
       }
       i++;
     }
+    return idx;
   }
 }

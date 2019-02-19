@@ -28,3 +28,16 @@ body, p, ul, li, h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   left: 0;
 }
+
+#root {
+  section {
+    .sidebar {
+      background-color: #f8ca00;
+      width: 200px;
+      height: 100vh;
+      float: left;
+    }
+    main {
+    }
+  }
+}
