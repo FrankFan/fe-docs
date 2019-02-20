@@ -94,7 +94,6 @@
       }
     }
     .animal {
-      margin-left: -100px;
       &::first-line {
         background: red;
         color: white;
@@ -104,6 +103,9 @@
 
   .w3c-example {
     border: 1px solid #ccc;
+    h2 {
+      word-break: break-all;
+    }
     div {
       width: 100px;
       height: 100px;
@@ -120,6 +122,9 @@
 
   .w3c-example2 {
     border: 1px solid #ccc;
+    h2 {
+      word-break: break-all;
+    }
     div {
       width: 100px;
       height: 100px;

@@ -30,14 +30,17 @@ body, p, ul, li, h1, h2, h3, h4, h5, h6 {
 }
 
 #root {
-  section {
+  & > section {
+    height: 100%;
     .sidebar {
       background-color: #f8ca00;
-      width: 200px;
-      height: 100vh;
-      float: left;
+      width: 180px;
+      height: 100%;
+      position: fixed;
+
     }
     main {
+      margin-left: 200px;
     }
   }
 }

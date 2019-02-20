@@ -2,14 +2,13 @@ import React from "react";
 import { HashRouter, Route, Switch } from "react-router-dom";
 
 import NoMatch from '../../common/components/NoMatch';
-import HomePage from './components/home/';
+import Sidebar from './components/sidebar/';
 import FloatPage from './components/float/';
 import BFCPage from './components/BFC/';
 import CenterPage from './components/center/';
 import PositionPage from './components/position/';
 import LayoutPage from './components/layout/';
 import ResponsiveSquarePage from "./components/square";
-import Sidebar from '@/common/components/Sidebar';
 
 const AppRouter = () => (
   <HashRouter>
@@ -17,7 +16,7 @@ const AppRouter = () => (
       <Sidebar />
       <main>
         <Switch>
-          <Route path="/" exact component={HomePage} />
+          <Route path="/" exact component={Sidebar} />
           <Route path="/bfc" component={BFCPage} />
           <Route path="/float" component={FloatPage} />
           <Route path="/center" component={CenterPage} />
