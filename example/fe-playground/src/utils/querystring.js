@@ -76,4 +76,15 @@ export function getQueryByName3(url, name) {
   return queryObj[name] || '';
 }
 
+// https://www.cnblogs.com/Wayou/p/things_you_dont_know_about_frontend.html
+
+export function parseUrl(url) {
+  let a = document.createElement('a');
+  a.href = url;
+  return {
+    source: url,
+    // protocal: a.protocol.
+  };
+}
+
 
