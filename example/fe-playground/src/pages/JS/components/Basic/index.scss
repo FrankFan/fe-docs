@@ -1,3 +1,26 @@
 .basic {
-  margin: 0 auto;
+  .question {
+    h1 {
+      font-size: 25px;
+      color: grey;
+    }
+    .content {
+      overflow: hidden;
+      border: 1px solid #fcc;
+      margin: 20px;
+      .box {
+        user-select: none;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        float: left;
+        &:hover {
+          transform: scale(1.01, 1.01);
+          transition: transform .1s;
+          // background: red !important;
+        }
+      }
+    }
+  }
 }
