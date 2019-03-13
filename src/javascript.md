@@ -5,12 +5,12 @@
 JavaScript 是 **弱类型** 语言，但并不是没有类型，JavaScript由下面6种基本类型和1种复杂类型组成。
 
 1. 基本数据类型
-  - Boolean
-  - Number
-  - String
+  - boolean
+  - number
+  - string
   - null
   - undefined
-  - Symbol
+  - symbol
 2. Object
   - Array
   - Date
