@@ -11,9 +11,12 @@
 * [JavaScript](./javascript.md)
     * [模块化](./module.md)
     * [Promise](./promise.md)
+    * [ECMAScript 6](./es6.md)
 * [Exampels](./example.md)
     * [Todo1 - Vue & ES6](./todo-vue1.md)
     * [Todo2 - React & Es6](./todo-react.md)
+    * [Todo3 - umi.js](./todo-umi.md)
+* [ant-design-pro技术栈](./antd-pro.md)
 * [WebKit技术内幕](./webkit-inside.md)
 * [Mac安装](./mac.md)
 

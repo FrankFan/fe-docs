@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "gitbook serve",
-    "build": "gitbook build src docs"
+    "build": "gitbook build src docs",
+    "init": "cd src && gitbook init"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,8 @@
     "url": "https://github.com/FrankFan/fe-docs/issues"
   },
   "homepage": "https://github.com/FrankFan/fe-docs#readme",
-  "dependencies": {
-    "react-router": "^4.3.1"
+  "dependencies": {},
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
   }
 }
