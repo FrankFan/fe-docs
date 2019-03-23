@@ -8,11 +8,11 @@ http://www.cnblogs.com/myzhibie/p/4392947.html
 
 水平居中：
 
-text-align: center
+`text-align: center`
 
 或：
 
-margin: 0 auto;
+`margin: 0 auto;`
 
 ## 将已知高度的元素垂直居中：
 
@@ -20,6 +20,8 @@ line-height 和 height 设置成一样即可
 
 
 ## 绝对居中方法（水平+垂直居中）
+
+
 
 ```css
 /* 要求元素本身设置高度 */
@@ -32,7 +34,7 @@ line-height 和 height 设置成一样即可
   left: 0;
 }
 
-/* 位置高度水平垂直居中 一、 局对定位*/
+/* 位置高度水平垂直居中 一、 局对定位 */
 .transform-center {
   position: absolute;
   top: 50%;
@@ -78,7 +80,8 @@ Flex项目在容器侧轴对齐方式，类似于 `justify-content`，只不过�
 http://www.w3cplus.com/css3/a-visual-guide-to-css3-flexbox-properties.html
 
 ## 行内元素水平居中
-行内元素（<span>、<a>、<img>）要实现水平居中，在行内元素外面包在一个块级元素（<div>、<li>、<p>）中，然后在父级元素中的CSS中设置：
+
+行内元素（`<span>、<a>、<img>`）要实现水平居中，在行内元素外面包在一个块级元素（`<div>、<li>、<p>`）中，然后在父级元素中的CSS中设置：
 ```css
 #container {
   text-align: center;
@@ -102,21 +105,22 @@ http://www.w3cplus.com/css3/a-visual-guide-to-css3-flexbox-properties.html
 
 ```css
 #container{
-    text-align:center;
+  text-align:center;
 }
 
 #center{
-    display:inline-block;
+  display:inline-block;
 }
 ```
 
 ## flex 水平居中
 flex布局简单又强大，只需在父级元素上设置：
+
 ```css
 #container{
-  display:flex; /* 设置为flex 布局 */
-  justify-content:center; /* 使每个flex item 水平居中 */
-  align-items: center; /* 使每个flex item 垂直居中 */
+  display:flex;
+  justify-content:center;
+  align-items: center;
 }
 ```
 
