@@ -184,5 +184,38 @@ foo(...args);
 对于Object而言，用于组合成新的Object。
 
 ```js
-https://dvajs.com/knowledgemap/#es6-%E5%AF%B9%E8%B1%A1%E5%92%8C%E6%95%B0%E7%BB%84
+const foo = {
+  a: 1,
+  b: 2,
+};
+const bar = {
+  b: 3,
+  c: 2,
+};
+const d = 4;
+
+const ret = { ...foo, ...bar, d };
+// { a: 1, b: 3, c: 2, d: 4}
+```
+
+对于 JSX 可以使用 Spread Attributes 。
+
+比如：
+
+```js
+const attrs = {
+  href: 'http://example.org',
+  target: '_blank',
+};
+<a {...attrs}>Hello</a>
+```
+
+等同于：
+
+```js
+const attrs = {
+  href: 'http://example.org',
+  target: '_blank',
+};
+<a href={attrs.href} target={attrs.target}>Hello</a>
 ```

@@ -12,6 +12,7 @@
     * [模块化](./module.md)
     * [Promise](./promise.md)
     * [ECMAScript 6](./es6.md)
+* [React.js](./react.md)
 * [Exampels](./example.md)
     * [Todo1 - Vue & ES6](./todo-vue1.md)
     * [Todo2 - React & Es6](./todo-react.md)
