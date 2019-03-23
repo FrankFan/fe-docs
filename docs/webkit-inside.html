@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>HTML · GitBook</title>
+        <title>WebKit技术内幕 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="css.html" />
+    <link rel="next" href="mac.html" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="antd-pro.html" />
     
 
     </head>
@@ -102,7 +102,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="HTML.html">
+        <li class="chapter " data-level="1.2" data-path="HTML.html">
             
                 <a href="HTML.html">
             
@@ -341,7 +341,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="webkit-inside.html">
+        <li class="chapter active" data-level="1.8" data-path="webkit-inside.html">
             
                 <a href="webkit-inside.html">
             
@@ -397,7 +397,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >HTML</a>
+        <a href="." >WebKit技术内幕</a>
     </h1>
 </div>
 
@@ -412,25 +412,38 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="html">HTML</h1>
-<p>HTML(HyperText Markup Language)&#xFF0C;&#x4E00;&#x79CD;&#x8D85;&#x6587;&#x672C;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF0C;&#x7528;&#x4E8E;&#x7F51;&#x9875;&#x7684;&#x521B;&#x5EFA;&#x548C;&#x5176;&#x4ED6;&#x4FE1;&#x606F;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x7684;&#x663E;&#x793A;&#x3002;&#x5B83;&#x7684;&#x8BED;&#x6CD5;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#xFF0C;&#x57FA;&#x672C;&#x4E0A;&#x662F;&#x4E00;&#x7CFB;&#x5217;&#x6807;&#x7B7E;&#xFF08;&#x4E5F;&#x79F0;&#x4E3A;&#x5143;&#x7D20;&#xFF09;&#x7EC4;&#x6210;&#x7684;&#x3002;&#x8FD9;&#x4E9B;&#x6807;&#x7B7E;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x8868;&#x793A;&#x6587;&#x5B57;&#x3001;&#x56FE;&#x7247;&#x3001;&#x591A;&#x5A92;&#x4F53;&#x7B49;&#x3002;</p>
-<p>HTML&#x662F;&#x7531;Tim Berners-Lee&#x4E8E;1991&#x5E74;&#x63D0;&#x51FA;&#x7684;&#xFF0C;&#x540C;&#x65F6;&#x4ED6;&#x8FD8;&#x662F;&#x7B2C;&#x4E00;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x53D1;&#x660E;&#x8005;&#x3002;</p>
-<p>&#x540E;&#x9762;&#x7ECF;&#x7406;&#x591A;&#x6B21;&#x7248;&#x672C;&#x66F4;&#x65B0;&#xFF0C;&#x76F4;&#x5230;1997&#x5E74;&#x7684;4.0&#x7248;&#x548C;1999&#x5E74;&#x7684;4.01&#x7248;&#x3002;</p>
-<p>2012&#x5E74;&#xFF0C;&#x5177;&#x6709;&#x5212;&#x65F6;&#x4EE3;&#x610F;&#x4E49;&#x7684;HTML5&#x6280;&#x672F;&#x7531;WHATWG&#x548C;W3C&#x63A8;&#x8350;&#x4F4D;&#x5019;&#x9009;&#x89C4;&#x8303;&#x3002;</p>
-<p>HTML5&#x5305;&#x542B;&#x4E86;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x6807;&#x51C6;&#xFF0C;&#x4E00;&#x5171;&#x5305;&#x542B; 10 &#x4E2A;&#x5927;&#x7684;&#x7C7B;&#x522B;&#xFF0C;&#x5B83;&#x4EEC;&#x5206;&#x522B;&#x662F;&#xFF1A;</p>
+                                <h1 id="webkit&#x6280;&#x672F;&#x5185;&#x5E55;">WebKit&#x6280;&#x672F;&#x5185;&#x5E55;</h1>
 <ul>
-<li>&#x79BB;&#x7EBF; offline</li>
-<li>&#x5B58;&#x50A8; storage</li>
-<li>&#x8FDE;&#x63A5; connectivity</li>
-<li>&#x6587;&#x4EF6;&#x8BBF;&#x95EE; file access</li>
-<li>&#x8BED;&#x4E49;&#x6027; semantics</li>
-<li>&#x97F3;&#x9891;&#x548C;&#x89C6;&#x9891; audio/video</li>
-<li>3D&#x548C;&#x56FE;&#x5F62; 3D/graphics</li>
-<li>&#x5C55;&#x793A; presentation</li>
-<li>&#x6027;&#x80FD; performance</li>
-<li>&#x5176;&#x4ED6; numts and bolts</li>
+<li>2003&#x5E74;&#xFF0C;&#x82F9;&#x679C;&#x53D1;&#x5E03;&#x4E86; Safari &#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x5E76;&#x5728;2005&#x5E74;&#x53D1;&#x8D77;&#x4E86;&#x65B0;&#x7684;&#x5F00;&#x6E90;&#x9879;&#x76EE; WebKit&#xFF08;&#x5B83;&#x662F; Safari &#x6D4F;&#x89C8;&#x5668;&#x7684;&#x5185;&#x6838;&#xFF09;&#x3002;</li>
+<li>2008&#x5E74;&#xFF0C;Google &#x4EE5;&#x82F9;&#x679C;&#x5F00;&#x6E90;&#x9879;&#x76EE; WebKit &#x4F5C;&#x4E3A;&#x5185;&#x6838;&#xFF0C;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x9879;&#x76EE; Chromium. &#x8FD9;&#x4E5F;&#x5C31;&#x662F;&#x8BF4; Chromium &#x4F7F;&#x7528;&#x4E86;&#x540C; Safari &#x4E00;&#x6837;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x5185;&#x6838;&#xFF08;&#x8FD9;&#x4E00;&#x8BF4;&#x6CD5;&#x5927;&#x4F53;&#x4E0A;&#x662F;&#x6B63;&#x786E;&#x7684;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x4E5F;&#x8FD8;&#x6709;&#x5F88;&#x591A;&#x4E0D;&#x540C;&#xFF09;&#x3002;</li>
 </ul>
-<h2 id="dom-&#x6A21;&#x578B;">DOM &#x6A21;&#x578B;</h2>
+<p>&#x6D4F;&#x89C8;&#x5668;&#x6709;&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x6A21;&#x5757;&#xFF1A; <strong>&#x6E32;&#x67D3;&#x5F15;&#x64CE;</strong>&#x3002;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x6E32;&#x67D3;&#x5F15;&#x64CE;&#x5C31;&#x662F;&#x80FD;&#x591F;&#x5C06; HTML/CSS/JavaScript &#x6587;&#x672C;&#x53CA;&#x5176;&#x76F8;&#x5E94;&#x7684;&#x8D44;&#x6E90;&#x8F6C;&#x6362;&#x6210;&#x56FE;&#x50CF;&#x7ED3;&#x679C;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x5165;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fvcmtcr94rj30q0048wfg.jpg" alt=""></p>
+<p>&#x6682;&#x65F6;&#x5148;&#x628A;&#x8F6C;&#x6362;&#x7684;&#x8FC7;&#x7A0B;&#x770B;&#x6210;&#x4E00;&#x4E2A;&#x9ED1;&#x76D2;&#xFF0C;&#x5176;&#x4E2D;&#x7684;&#x7EC6;&#x8282;&#x5C31;&#x662F;&#x524D;&#x7AEF;&#x5DE5;&#x7A0B;&#x5E08;&#x5E94;&#x8BE5;&#x5B66;&#x4E60;&#x7684;&#x91CD;&#x70B9;&#x3002;</p>
+<p>&#x6D4F;&#x89C8;&#x5668;&#x6E32;&#x67D3;&#x5F15;&#x64CE;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#xFF1A;</p>
+<ul>
+<li>HTML&#x89E3;&#x91CA;&#x5668;<blockquote>
+<p>&#x89E3;&#x91CA; HTML &#x6587;&#x672C;&#x7684;&#x89E3;&#x91CA;&#x5668;&#xFF0C;&#x4E3B;&#x8981;&#x4F5C;&#x7528;&#x662F;&#x5C06; HTML &#x6587;&#x672C;&#x5373;&#x4F7F;&#x6210; DOM&#xFF08;&#x6587;&#x6863;&#x5BF9;&#x8C61;&#x6A21;&#x578B;&#xFF09;&#x6811;&#xFF0C;DOM&#x662F;&#x4E00;&#x79CD;&#x6587;&#x6863;&#x7684;&#x8868;&#x793A;&#x65B9;&#x6CD5;</p>
+</blockquote>
+</li>
+<li>CSS&#x89E3;&#x91CA;&#x5668;<blockquote>
+<p>&#x5C42;&#x53E0;&#x6837;&#x5F0F;&#x8868;&#x7684;&#x89E3;&#x91CA;&#x5668;&#xFF0C;&#x5B83;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x4E3A; DOM &#x6811;&#x79CD;&#x7684;&#x54E5;&#x54E5;&#x5143;&#x7D20;&#x5BF9;&#x8C61;&#x8BA1;&#x7B97;&#x51FA;&#x6837;&#x5F0F;&#x4FE1;&#x606F;&#xFF0C;&#x4ECE;&#x800C;&#x4E3A;&#x8BA1;&#x7B97;&#x6700;&#x540E;&#x7F51;&#x9875;&#x7684;&#x5E03;&#x5C40;&#x63D0;&#x4F9B;&#x57FA;&#x7840;&#x8BBE;&#x65BD;</p>
+</blockquote>
+</li>
+<li>&#x5E03;&#x5C40; layout<blockquote>
+<p>&#x5728; DOM &#x521B;&#x5EFA;&#x4E4B;&#x540E;&#xFF0C;WebKit &#x9700;&#x8981;&#x5C06;&#x5176;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x5BF9;&#x8C61;&#x540C;&#x6837;&#x5F0F;&#x4FE1;&#x606F;&#x7ED3;&#x5408;&#x8D77;&#x6765;&#xFF0C;&#x8BA1;&#x7B97;&#x5B83;&#x4EEC;&#x7684;&#x5927;&#x5C0F;&#x4F4D;&#x7F6E;&#x7B49;&#x5E03;&#x5C40;&#x4FE1;&#x606F;&#xFF0C;&#x884C;&#x6210;&#x4E00;&#x4E2A;&#x80FD;&#x591F;&#x8868;&#x793A;&#x8FD9;&#x6240;&#x6709;&#x4FE1;&#x606F;&#x7684;&#x5185;&#x90E8;&#x8868;&#x793A;&#x6A21;&#x578B;</p>
+</blockquote>
+</li>
+<li>JavaScript &#x5F15;&#x64CE;<blockquote>
+<p>&#x4F7F;&#x7528; JavaScript &#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x7F51;&#x9875;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x4E5F;&#x80FD;&#x591F;&#x4FEE;&#x6539; CSS &#x7684;&#x4FE1;&#x606F;&#xFF0C;JavaScript &#x5F15;&#x64CE;&#x80FD;&#x591F;&#x89E3;&#x91CA; JavaScript &#x4EE3;&#x7801;&#x5E76;&#x901A;&#x8FC7; DOM &#x63A5;&#x53E3;&#x548C; CSSOM &#x63A5;&#x53E3;&#x6765;&#x4FEE;&#x6539;&#x7F51;&#x9875;&#x7684;&#x5185;&#x5BB9;&#x548C;&#x6837;&#x5F0F;&#x4FE1;&#x606F;&#xFF0C;&#x4ECE;&#x800C;&#x6539;&#x53D8;&#x6E32;&#x67D3;&#x7684;&#x7ED3;&#x679C;</p>
+</blockquote>
+</li>
+<li>&#x7ED8;&#x56FE;<blockquote>
+<p>&#x4F7F;&#x7528;&#x56FE;&#x5F62;&#x5E93;&#x5C06;&#x5E03;&#x5C40;&#x8BA1;&#x7B97;&#x540E;&#x7684;&#x5404;&#x4E2A;&#x7F51;&#x9875;&#x7684;&#x8282;&#x70B9;&#x7ED8;&#x5236;&#x6210;&#x56FE;&#x50CF;&#x7ED3;&#x679C;&#x3002;</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="https://ws1.sinaimg.cn/large/006tNbRwgy1fvcnm7sqibj30on0bmwi7.jpg" alt=""></p>
 
                                 
                                 </section>
@@ -458,12 +471,12 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                <a href="antd-pro.html" class="navigation navigation-prev " aria-label="Previous page: ant-design-pro技术栈">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="css.html" class="navigation navigation-next " aria-label="Next page: CSS">
+                <a href="mac.html" class="navigation navigation-next " aria-label="Next page: Mac安装">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -474,7 +487,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"HTML","level":"1.2","depth":1,"next":{"title":"CSS","level":"1.3","depth":1,"path":"css.md","ref":"./css.md","articles":[{"title":"盒模型","level":"1.3.1","depth":2,"path":"box.md","ref":"./box.md","articles":[]},{"title":"选择器","level":"1.3.2","depth":2,"path":"css-selector.md","ref":"./css-selector.md","articles":[]},{"title":"布局","level":"1.3.3","depth":2,"path":"layout.md","ref":"./layout.md","articles":[]},{"title":"居中","level":"1.3.4","depth":2,"path":"center.md","ref":"./center.md","articles":[]},{"title":"动画","level":"1.3.5","depth":2,"path":"animation.md","ref":"./animation.md","articles":[]}]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"HTML.md","mtime":"2019-03-07T13:08:21.844Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-23T10:25:39.989Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"WebKit技术内幕","level":"1.8","depth":1,"next":{"title":"Mac安装","level":"1.9","depth":1,"path":"mac.md","ref":"./mac.md","articles":[]},"previous":{"title":"ant-design-pro技术栈","level":"1.7","depth":1,"path":"antd-pro.md","ref":"./antd-pro.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"webkit-inside.md","mtime":"2019-03-07T13:08:21.847Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-23T10:25:39.989Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
