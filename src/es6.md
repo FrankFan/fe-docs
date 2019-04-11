@@ -1,7 +1,17 @@
 # ECMAScript 6
 
 - es6 特性那么多，我需要全部学会吗？
-- react component 有三种写法，我需要全部学会吗？
+
+1. let 和 const 命令
+2. 箭头函数
+3. 解构
+4. Set 和 Map 数据结构
+5. Promise 对象
+6. Proxy 和 Reflect
+7. Generator 和 async
+8. 模板字符串
+9. Module 语法
+
 
 
 ## 一、变量和声明

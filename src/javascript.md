@@ -47,12 +47,11 @@ typeof not_defined_var // "undefined"
 ### 判断具体类型
 
 ```js
-Object.prototype.toString.call(obj) === '[object Number]'
+Object.prototype.toString.call(42) === '[object Number]'
 Object.prototype.toString.call('') === '[object String]'
 Object.prototype.toString.call(false) === '[object Boolean]'
 Object.prototype.toString.call({}) === '[object Object]'
 Object.prototype.toString.call([]) === '[object Array]'
-Object.prototype.toString.call(obj) === '[object Number]'
 Object.prototype.toString.call(/^$/) === '[object RegExp]'
 
 
@@ -71,7 +70,14 @@ var isArray = isType('Array');
 
 console.log(isArray(1));
 console.log(isArray([1, 2, 3]));
+
+
+var type = (obj) => {
+  return Object.prototype.toString.call(obj).match(/^\[object (.*?)\]/)[1].toLowerCase();
+}
 ```
+
+![示例](https://ws3.sinaimg.cn/large/006tNc79gy1g1yzkx23w8j306j0diwf4.jpg)
 
 ### 类型转换
 
@@ -144,9 +150,11 @@ obj.prop = 'newValue'; // 这是ok 的
 obj = []; // Uncaught TypeError: Assignment to constant variable.
 ```
 
-### 变量提升
+### 变量提升 hoist
 
 JavaScript 中可以引用稍后声明的变量，而不会引发异常，这一概念被称为变量声明提升（hoisting）
+
+#### 例子
 
 ```js
 console.log(a); // undefined
@@ -158,6 +166,56 @@ var a;
 console.log(a); // undefined
 a = 2;
 ```
+
+以上只是简单的变量提升。还有一种情况需要注意，那就是`函数声明`的变量提升。
+
+var（变量声明） 和 function（函数声明） 都会被提升到作用域顶部。 如果同时出现变量声明和函数声明的话，函数声明会被最先提升，其次才是变量提升。[证据参考这里](https://stackoverflow.com/questions/28246589/order-of-hoisting-in-javascript)
+
+#### 例子一
+
+```js
+console.log(a);
+
+var a = function() {};
+```
+
+输出： `undefined`
+
+`a`在声明之前被调用，为什么不会报错？这是因为在JS中，变量声明会被提升到作用域顶部，上面的代码等同于这样：
+
+```js
+var a;
+console.log(a);
+a = function() {};
+```
+
+#### 例子二
+
+下面这段代码的运行结果会什么？
+
+```js
+console.log(typeof b); // function
+
+var b = 1;
+
+function b() {};
+
+console.log(b); // 1
+```
+
+输出：`function、1` 同样是因为JS的变量提升的原因。`函数声明和变量声明都会被提升到作用域顶部，且函数声明优先级更高`。
+
+于是，上面那段代码在JS解析器看来应该这样的：
+
+```js
+function b() {};
+var b;
+console.log(typeof b); // function
+b = 1;
+console.log(b); // 1
+```
+
+
 
 
 ## 三、函数
@@ -552,24 +610,4 @@ push(arr, 3);
 console.log(arr);  // 1 2 3
 ```
 
-## URI
 
-![](./imgs/url.png)
-
-
-```js
-function getQueryObject(url) {
-  url = url == null ? window.location.href : url;
-  var search = url.substring(url.lastIndexOf("?") + 1);
-  var obj = {};
-  var reg = /([^?&=]+)=([^?&=]*)/g;
-  search.replace(reg, function (rs, $1, $2){
-    var name = decodeURIComponent($1);
-    var val = decodeURIComponent($2);
-    val = String(val);
-    obj[name] = val;
-    return rs;
-  });
-  return obj;
-}
-```

@@ -22,3 +22,26 @@ HTML5包含了一系列的标准，一共包含 10 个大的类别，它们分�
 
 
 ## DOM 模型
+
+
+## URI
+
+![](./imgs/url.png)
+
+
+```js
+function getQueryObject(url) {
+  url = url == null ? window.location.href : url;
+  var search = url.substring(url.lastIndexOf("?") + 1);
+  var obj = {};
+  var reg = /([^?&=]+)=([^?&=]*)/g;
+  search.replace(reg, function (rs, $1, $2){
+    var name = decodeURIComponent($1);
+    var val = decodeURIComponent($2);
+    val = String(val);
+    obj[name] = val;
+    return rs;
+  });
+  return obj;
+}
+```

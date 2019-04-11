@@ -23,6 +23,19 @@ delay(1000).then(_ => {
 });
 ```
 
+## 例子
+
+```js
+// 以下代码输出什么？
+new Promise((resolve, reject) => {
+    reject(1);
+}).catch(() => {
+    console.log(2);
+}).then(() => console.log(3), (a) => console.log(a));
+// 2
+// 3
+```
+
 # Generators
 
 `Generator` 返回的是迭代器，通过`yield`关键字实现暂停功能。

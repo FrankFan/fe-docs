@@ -11,30 +11,47 @@
 Object.prototype.toString.call(obj);
 ```
 2.内存泄漏问题
-  a. 闭包
-  b. xxx
-  c. 全局变量
+
+a) 闭包
+
+b) xxx
+
+c) 全局变量
+
 
 3. 实现一些方案
 
 a) 模拟一个HashTable类，包含有add、remove、contains、length方法
+
 b) 2个数组，求交集、差集、并集
+
 c) 求数组中重复的数
+
 d) 数组去重
+
 e) 数组中最长子序列
+
 f) 求数组中乘积最大的三个数（先排序，再计算）
 
+
 4. JS 面向对象，ES5 VS ES6中类的概念以及写法
-实例属性、方法
-静态属性、方法
-私有方法
+
+a) 实例属性、方法
+
+b) 静态属性、方法
+
+c) 私有方法
 
 5. 异步编程方案
 
 a) callback
+
 b) promise
+
 c) generator
+
 d) async/await
+
 
 
 ## CSS基础
@@ -58,10 +75,19 @@ d) async/await
   color: green;
 }
 ```
+
 6. 如何书写、组织CSS？ 如何避免命名冲突，样式覆盖问题？
+  - SCSS
+  - LESS
   - CSS Modules
+  - CSS in JS
+  - JS in CSS (CSS Houdini)
 
 7. CSS左边固定，右边可变的布局实现方法；要求在源码顺序中左边必须在前。
+
+8. HTML中有一个`display:none`的图片会不会加载？
+
+
 
 
 ## 前端工程化
@@ -77,15 +103,20 @@ d) async/await
 
 4. 如何管理js代码？模块化方案了解哪些？
 
-AMD
-CMD
-CommonJS
+a) AMD
+
+b) CMD
+
+c) CommonJS
 
 5. 遇到过哪些兼容性问题，怎么解决的？
 
 a) CSS兼容
+
 b) JS API兼容
+
 3) HTML兼容
+
 
 
 ## web安全
@@ -97,18 +128,17 @@ b) JS API兼容
 ## Node.js
 
 1. node.js特点
-a) error first callback
-b) 异步、非阻塞、高并发
 
+a) error first callback
+
+b) 异步、非阻塞、高并发
 
 
 ### 前端工程化的问题
 
 1. Webpack
 
-a) 核心概念
-b) 插件机制
-c) loader机制
+a) 核心概念: loader机制、插件机制
 
 ```
 1. __webpack_require__
@@ -128,17 +158,41 @@ a) 如何写一个 Babel 插件？
 
 ### React
 1. React 声明组件的方式和区别
-2. 新版本React新增的API
-3. 数据流管理
+2. 新版本React新增的API，react hooks
+3. 数据流管理方案
 
 
 ### 谈谈 Vue 和 React 自己的理解
 
 1. 数据绑定方式
 2. cli 方式
-3. 数据管理方式
+3. 数据流管理方式
 
 
 ### 做过的最有挑战性的一个项目，交互场景多的是什么？
+
+### node.js 多线程管理
+
+### web性能优化方式
+
+### react diff 算法
+
+### 浏览器输入url后发生了什么
+
+
+### 列举常用的HTTP header
+### 状态码 301 和 302 的区别
+###
+
+
+
+# 电话面试题目
+1. 介绍下 React 生命周期
+2. React 声明组件的方式和区别
+3. 新版本React新增的API，react hooks
+4. 数据流管理方案
+5. virtual dom 和 dom diff 算法
+
+
 
 
