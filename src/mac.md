@@ -56,6 +56,19 @@ sudo chown -R $USER:$GROUP ~/.npm
 npm cache clean
 ```
 
+
+```bash
+# 查看配置
+$ npm config list
+$ npm config list -l
+
+# 设置代理
+$ npm config set proxy http://127.0.0.1.8080
+
+# 使用完毕
+$ npm config set proxy null
+```
+
 ## vim 使用
 
 

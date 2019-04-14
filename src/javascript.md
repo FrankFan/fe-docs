@@ -2,63 +2,64 @@
 
 ## 一、数据类型
 
-JavaScript 是 **弱类型** 语言，但并不是没有类型，JavaScript由下面6种基本类型和1种复杂类型组成。
+JavaScript 是 **弱类型** 语言，但并不是没有类型，JavaScript 由下面 6 种基本类型和 1 种复杂类型组成。
 
 1. 基本数据类型
-  - boolean
-  - number
-  - string
-  - null
-  - undefined
-  - symbol
-2. Object
-  - Array
-  - Date
-  - RegExp
-  - Math
-  - ...
 
-可以使用 **typeof** 关键字判断数据类型，会返回一个字符串作为类型，但是并非所有的返回结果都符合预期。**typeof** 只能检测基本类型，对引用类型(Array、Object等)不能很好的区分，如果是自定义对象就更别指望能正确区分了。
+- boolean
+- number
+- string
+- null
+- undefined
+- symbol
+
+2. Object
+
+- Array
+- Date
+- RegExp
+- Math
+- ...
+
+可以使用 **typeof** 关键字判断数据类型，会返回一个字符串作为类型，但是并非所有的返回结果都符合预期。**typeof** 只能检测基本类型，对引用类型(Array、Object 等)不能很好的区分，如果是自定义对象就更别指望能正确区分了。
 
 举例如下：
 
 ```js
-typeof false // "boolean"
-typeof .2 // "number
-typeof NaN // "number"
-typeof '' // "string"
-typeof undefined // "undefined"
-typeof Symbol() // "symbol"
-typeof Symbol // "function"
+typeof false; // "boolean"
+typeof 0.2; // "number
+typeof NaN; // "number"
+typeof ''; // "string"
+typeof undefined; // "undefined"
+typeof Symbol(); // "symbol"
+typeof Symbol; // "function"
 
-typeof [] // "object"
-typeof new Date() // "object"
-typeof Date // "function"
+typeof []; // "object"
+typeof new Date(); // "object"
+typeof Date; // "function"
 
-typeof alert // "function"
+typeof alert; // "function"
 
-typeof null // "object"
-typeof not_defined_var // "undefined"
+typeof null; // "object"
+typeof not_defined_var; // "undefined"
 ```
 
 ![](https://ws1.sinaimg.cn/large/006tNbRwgy1fxecxl49umj306q0dxq3v.jpg)
 
-
 ### 判断具体类型
 
 ```js
-Object.prototype.toString.call(42) === '[object Number]'
-Object.prototype.toString.call('') === '[object String]'
-Object.prototype.toString.call(false) === '[object Boolean]'
-Object.prototype.toString.call({}) === '[object Object]'
-Object.prototype.toString.call([]) === '[object Array]'
-Object.prototype.toString.call(/^$/) === '[object RegExp]'
-
+Object.prototype.toString.call(42) === '[object Number]';
+Object.prototype.toString.call('') === '[object String]';
+Object.prototype.toString.call(false) === '[object Boolean]';
+Object.prototype.toString.call({}) === '[object Object]';
+Object.prototype.toString.call([]) === '[object Array]';
+Object.prototype.toString.call(/^$/) === '[object RegExp]';
 
 function isType(type) {
-  return function(obj){
-    return Object.prototype.toString.call(obj) === '[object '+ type +']';
-  }
+  return function(obj) {
+    return Object.prototype.toString.call(obj) === '[object ' + type + ']';
+  };
 }
 
 var isNumber = isType('Number');
@@ -71,10 +72,12 @@ var isArray = isType('Array');
 console.log(isArray(1));
 console.log(isArray([1, 2, 3]));
 
-
-var type = (obj) => {
-  return Object.prototype.toString.call(obj).match(/^\[object (.*?)\]/)[1].toLowerCase();
-}
+var type = obj => {
+  return Object.prototype.toString
+    .call(obj)
+    .match(/^\[object (.*?)\]/)[1]
+    .toLowerCase();
+};
 ```
 
 ![示例](https://ws3.sinaimg.cn/large/006tNc79gy1g1yzkx23w8j306j0diwf4.jpg)
@@ -86,34 +89,32 @@ var type = (obj) => {
 ```js
 // 分析以下代码
 var a = 0;
-if(a) {
+if (a) {
   console.log('hello');
 }
 ```
 
-在 JavaScript 中，布尔值是一种基本的数据类型。Boolean 对象是一个将布尔值打包的布尔对象。Boolean 对象主要用于提供将值转换成布尔值，即true或false.
+在 JavaScript 中，布尔值是一种基本的数据类型。Boolean 对象是一个将布尔值打包的布尔对象。Boolean 对象主要用于提供将值转换成布尔值，即 true 或 false.
 
 那么什么时候是 true ， 什么时候是 false 呢？ 具体转换规则如下表：
 
-数据类型 | 转换为true的值 | 转换为false的值
--------------| --------------| -------------
-Boolean | true  | false
-String | 任何非空字符串  | 空字符串''
-Number | 任何非0数值  | 0和NaN
-Object | 任何对象  | null
-undfined |   | undefined
+| 数据类型 | 转换为 true 的值 | 转换为 false 的值 |
+| -------- | ---------------- | ----------------- |
+| Boolean  | true             | false             |
+| String   | 任何非空字符串   | 空字符串''        |
+| Number   | 任何非 0 数值    | 0 和 NaN          |
+| Object   | 任何对象         | null              |
+| undfined |                  | undefined         |
 
-**注意**： `undefined` 没有转换为true的值。
-
+**注意**： `undefined` 没有转换为 true 的值。
 
 从这里我们一目了然， Boolean(0) 返回的是 false;
 
-那么当if语句里面没有表达式，只是某个值时 如 `if (xxx)`  它会自动执行Boolean(xxx)操作，  即 `if(xxx) = if(Boolean(xxx))`
+那么当 if 语句里面没有表达式，只是某个值时 如 `if (xxx)` 它会自动执行 Boolean(xxx)操作， 即 `if(xxx) = if(Boolean(xxx))`
 
-所以我们对应上面Boolean的转换规则 ，再结合上面的题，就非常容易理解了。
+所以我们对应上面 Boolean 的转换规则 ，再结合上面的题，就非常容易理解了。
 
-这就是 if(0) 会返回false的原因。
-
+这就是 if(0) 会返回 false 的原因。
 
 ## 二、变量
 
@@ -130,7 +131,7 @@ var global_var = 1;
 
 function fn() {
   var fn_var = 2;
-  if(fn_var > 10) {
+  if (fn_var > 10) {
     let block_var = 3;
     global_var2 = 4;
   }
@@ -181,7 +182,7 @@ var a = function() {};
 
 输出： `undefined`
 
-`a`在声明之前被调用，为什么不会报错？这是因为在JS中，变量声明会被提升到作用域顶部，上面的代码等同于这样：
+`a`在声明之前被调用，为什么不会报错？这是因为在 JS 中，变量声明会被提升到作用域顶部，上面的代码等同于这样：
 
 ```js
 var a;
@@ -198,25 +199,22 @@ console.log(typeof b); // function
 
 var b = 1;
 
-function b() {};
+function b() {}
 
 console.log(b); // 1
 ```
 
-输出：`function、1` 同样是因为JS的变量提升的原因。`函数声明和变量声明都会被提升到作用域顶部，且函数声明优先级更高`。
+输出：`function、1` 同样是因为 JS 的变量提升的原因。`函数声明和变量声明都会被提升到作用域顶部，且函数声明优先级更高`。
 
-于是，上面那段代码在JS解析器看来应该这样的：
+于是，上面那段代码在 JS 解析器看来应该这样的：
 
 ```js
-function b() {};
+function b() {}
 var b;
 console.log(typeof b); // function
 b = 1;
 console.log(b); // 1
 ```
-
-
-
 
 ## 三、函数
 
@@ -232,23 +230,23 @@ console.log(b); // 1
 ```js
 function fn() {} // 存在变量提升
 
-var fn = function() {}
+var fn = function() {};
 
-var fn = new Function(arg1, arg2, ... argN, funcBody);
+var fn = new Function(arg1, arg2, ...argN, funcBody);
 
-var fn = (param) => {}
+var fn = param => {};
 ```
 
 ### arguments
 
 1. arguments： 一个包含了传递给当前执行函数参数的类似于数组(array-like)的对象
-  > 转为真正的数组
-    - ES6
-    - `var args = Array.from(arguments);`
-    - `var args = [...arguments];`
-    - ES5
-    - `var args = Array.prototype.slice.call(arguments);`
-    - `var args = [].slice.call(arguments);`
+   > 转为真正的数组
+   - ES6
+   - `var args = Array.from(arguments);`
+   - `var args = [...arguments];`
+   - ES5
+   - `var args = Array.prototype.slice.call(arguments);`
+   - `var args = [].slice.call(arguments);`
 2. arguments.length: 传递给函数的参数个数
 3. ~~arguments.caller 调用当前执行函数的函数~~ [已废弃](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/arguments/caller)
 4. ~~arguments.callee: 当前正在执行的函数~~ [严格模式已废弃](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/arguments/callee)
@@ -268,13 +266,12 @@ foo(1, 2, 3); // Arguments(3) [1,2,3]
 function foo(...args) {
   return args;
 }
-foo(1,2,3); // [1,2,3]
-
+foo(1, 2, 3); // [1,2,3]
 
 function fn(a, b, ...args) {
   return args;
 }
-fn(1,2,3,4,5); // [3,4,5]
+fn(1, 2, 3, 4, 5); // [3,4,5]
 ```
 
 ### default
@@ -290,7 +287,6 @@ fn(5); // 8
 fn(); // 5
 ```
 
-
 ## 四、对象
 
 JavaScript 中对象是可变的`带键的集合`(keyed collections)
@@ -300,13 +296,13 @@ JavaScript 中对象是可变的`带键的集合`(keyed collections)
 1. 字面量
 2. 构造函数
 
- ```js
-  var obj = {
-    prop: 'value',
-    fn: function() {},
-  }
+```js
+var obj = {
+  prop: 'value',
+  fn: function() {}
+};
 
-  var date = new Date();
+var date = new Date();
 ```
 
 构造函数和普通函数并没有区别，使用 `new` 关键字调用就是构造函数，使用构造函数可以**实例化**一个对象。
@@ -337,7 +333,7 @@ function Person(name) {
 
 Person.prototype.print = function() {
   console.log(this.name);
-}
+};
 
 var p1 = new Person('Tony');
 var p2 = new Person('Lucy');
@@ -346,16 +342,16 @@ p1.print();
 p2.print();
 ```
 
-## 五、this和作用域
+## 五、this 和作用域
 
-this场景
+this 场景
 
 ### 普通函数
 
 1. 严格模式： this 是 `undefined`
 2. 非严格模式： this 是 全局对象
-  1. Node环境： `global`
-  2. 浏览器环境： `window`
+3. Node 环境： `global`
+4. 浏览器环境： `window`
 
 ### 构造函数
 
@@ -366,6 +362,7 @@ this 指向对象的实例
 this 指向对象本身。
 
 call 和 apply
+
 1. fn.call(context, arg1, arg2, ... argn);
 2. fn.apply(context, args);
 
@@ -377,9 +374,12 @@ call 和 apply
 function fn() {
   this.i = 0;
 
-  setInterval(function() {
-    console.log(this.i++);
-  }.bind(this), 500)
+  setInterval(
+    function() {
+      console.log(this.i++);
+    }.bind(this),
+    500
+  );
 }
 
 fn();
@@ -395,17 +395,16 @@ function fn() {
 
   setInterval(() => {
     console.log(this.i++);
-  }, 500)
+  }, 500);
 }
 
 fn();
-
 ```
-
 
 ## 六、继承
 
 在 JavaScript 的场景，继承有两个目标，子类需要得到父类的：
+
 1. 对象的属性
 2. 对象的方法
 
@@ -418,12 +417,12 @@ function inherits(child, parent) {
 
 function People(name, age) {
   this.name = name;
-  this.age  = age;
+  this.age = age;
 }
 
 People.prototype.getName = function() {
   return this.name;
-}
+};
 
 function English(name, age, language) {
   People.call(this, name, age);
@@ -435,8 +434,7 @@ inherits(English, People);
 English.prototype.introduce = function() {
   console.log(`Hi, I am ${this.name}`);
   console.log(`I speak ${this.language}`);
-}
-
+};
 
 function Chinese(name, age, language) {
   People.call(this, name, age);
@@ -445,10 +443,10 @@ function Chinese(name, age, language) {
 
 inherits(Chinese, People);
 
-Chinese.prototype.introduce = function () {
+Chinese.prototype.introduce = function() {
   console.log('你好，我是' + this.getName());
   console.log('我说' + this.language);
-}
+};
 
 var en = new English('Tony', 26, 'English');
 var cn = new Chinese('小明', 27, '汉语');
@@ -465,7 +463,7 @@ cn.introduce();
 class People {
   constructor(name, age) {
     this.name = name;
-    this.age  = age;
+    this.age = age;
   }
 
   getName() {
@@ -476,7 +474,7 @@ class People {
 class English extends People {
   constructor(name, age, language) {
     super(name, age);
-    this.language =  language;
+    this.language = language;
   }
 
   introduce() {
@@ -497,7 +495,7 @@ en.intrduce();
 ### 回调函数
 
 ```js
-[1, 2, 3, 4].forEach(function(item){
+[1, 2, 3, 4].forEach(function(item) {
   console.log(item + 2); // 3,4,5,6
 });
 ```
@@ -505,6 +503,7 @@ en.intrduce();
 ### 闭包
 
 闭包由两部分组成，
+
 1. 函数
 2. 环境： 函数创建时作用域内的局部变量
 
@@ -513,7 +512,7 @@ function makeCounter(init) {
   var init = init || 0;
   return function() {
     return ++init;
-  }
+  };
 }
 
 var counter = makeCounter(10);
@@ -526,24 +525,23 @@ console.log(counter());
 
 ```js
 for (var i = 0; i < doms.length; i++) {
-  doms.eq(i).on('click', function (ev) {
+  doms.eq(i).on('click', function(ev) {
     console.log(i);
   });
 }
 
 // 修改后
 for (var i = 0; i < doms.length; i++) {
-  (function (i) {
-    doms.eq(i).on('click', function (ev) {
+  (function(i) {
+    doms.eq(i).on('click', function(ev) {
       console.log(i);
     });
   })(i);
 }
 ```
 
-
-
 ### 尾递归
+
 尾调用是指某个函数的最后一步是调用另一个函数
 函数调用自身，称为递归
 如果尾调用自身，就称为尾递归
@@ -555,7 +553,7 @@ function factorial(n) {
   return n * factorial(n - 1);
 }
 
-factorial(5) // 120
+factorial(5); // 120
 ```
 
 但对于尾递归来说，由于只存在一个调用记录，所以永远不会发生"栈溢出"错误
@@ -566,9 +564,8 @@ function factorial(n, total) {
   return factorial(n - 1, n * total);
 }
 
-factorial(5, 1) // 120
+factorial(5, 1); // 120
 ```
-
 
 ### 柯里化
 
@@ -577,7 +574,7 @@ factorial(5, 1) // 120
 ```js
 // 柯里化减少参数
 function currying(fn, n) {
-  return function (m) {
+  return function(m) {
     return fn.call(this, m, n);
   };
 }
@@ -589,12 +586,13 @@ function tailFactorial(n, total) {
 
 const factorial = currying(tailFactorial, 1);
 
-factorial(5) // 120
+factorial(5); // 120
 ```
 
 ### 反柯里化
+
 ```js
-Function.prototype.uncurry = function () {
+Function.prototype.uncurry = function() {
   return this.call.bind(this);
 };
 
@@ -607,7 +605,50 @@ push(arr, 1);
 push(arr, 2);
 push(arr, 3);
 
-console.log(arr);  // 1 2 3
+console.log(arr); // 1 2 3
 ```
 
+### javascript 中如何对一个对象进行`深度clone`？（只考虑原始值、数组和对象，不考虑原型链、函数指针等 corner cases）请代码实现
 
+```js
+function deepClone(objOrArray) {
+  // [1,2,['a','b'],5,6]
+  // [1,2,['a','b'],5,6]
+  const copyArray = arr => {
+    let arrayResult = [];
+    arr.forEach(item => {
+      arrayResult.push(cloneObjOrArray(item));
+    });
+    return arrayResult;
+  };
+
+  const copyObj = obj => {
+    let objResult = {};
+    for (var key in obj) {
+      if (obj.hasOwnProperty(key)) {
+        objResult[key] = cloneObjOrArray(obj[key]);
+      }
+    }
+    return objResult;
+  };
+
+  const cloneObjOrArray = el => {
+    if (Array.isArray(el)) {
+      return copyArray(el);
+    } else if (typeof el === 'object') {
+      return copyObj(el);
+    } else {
+      return el;
+    }
+  };
+
+  return cloneObjOrArray(objOrArray);
+}
+
+var obj = [1, 2, ['a', 'b'], 5, 6];
+var obj2 = { a: '1', b: [1, 3, 5] };
+var res = deepClone(obj2);
+// var res = deepCopy(obj2);
+console.log(res);
+console.log(res === obj2);
+```
