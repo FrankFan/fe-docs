@@ -26,7 +26,7 @@ reducer
 # dva
 dva是一层包括了webpack、fetch、saga（数据异步处理）等操作的封装。
 
-# reduc-sga
+# redux-saga
 处理异步数据流
 
 

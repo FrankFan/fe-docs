@@ -60,7 +60,7 @@
     <link rel="next" href="box.html" />
     
     
-    <link rel="prev" href="HTML.html" />
+    <link rel="prev" href="emmet.html" />
     
 
     </head>
@@ -112,6 +112,25 @@
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="emmet.html">
+            
+                <a href="emmet.html">
+            
+                    
+                    快速编写HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -252,6 +271,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.4.4" data-path="reduce.html">
+            
+                <a href="reduce.html">
+            
+                    
+                    reduce
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -359,7 +391,20 @@
                 <a href="mac.html">
             
                     
-                    Mac安装
+                    Mac装机必备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ssh-config.html">
+            
+                <a href="ssh-config.html">
+            
+                    
+                    ssh管理
             
                 </a>
             
@@ -414,17 +459,111 @@
                                 
                                 <h1 id="css">CSS</h1>
 <p>CSS &#x7684;&#x5168;&#x79F0;&#x662F;  Cascading Style Sheet&#xFF0C;&#x4E2D;&#x6587;&#x540D;&#x662F;&#x7EA7;&#x8054;&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x4E5F;&#x6709;&#x53EB;&#x505A;&#x5C42;&#x53E0;&#x6837;&#x5F0F;&#x8868;&#x7684;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x7528;&#x6765;&#x63A7;&#x5236;&#x7F51;&#x9875;&#x7684;&#x663E;&#x793A;&#x98CE;&#x683C;&#x3002;</p>
-<h2 id="todo">todo</h2>
+<h2 id="css&#x6587;&#x6863;&#x6D41;">CSS&#x6587;&#x6863;&#x6D41;</h2>
+<p>HTML&#x7684;&#x5E03;&#x5C40;&#x5C31;&#x662F;&#x57FA;&#x4E8E;&#x6587;&#x6863;&#x6D41;&#x6A21;&#x578B;&#xFF0C;&#x6240;&#x8C13;&#x7684;&#x6587;&#x6863;&#x6D41;&#xFF0C;&#x6307;&#x7684;&#x662F;&#x9875;&#x9762;&#x5728;&#x6392;&#x7248;&#x5E03;&#x5C40;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5143;&#x7D20;&#x4F1A;&#x6309;&#x7167;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#x3001;&#x4ECE;&#x4E0A;&#x5230;&#x4E0B;&#x7684;&#x987A;&#x5E8F;&#x6D41;&#x5F0F;&#x6392;&#x5217;&#x3002;&#x8131;&#x79BB;&#x6587;&#x6863;&#x6D41;&#x5C31;&#x662F;&#x5143;&#x7D20;&#x6253;&#x7834;&#x4E86;&#x8FD9;&#x4E2A;&#x6392;&#x5217;&#x987A;&#x5E8F;&#xFF0C;&#x8131;&#x79BB;&#x4E86;&#x8FD9;&#x4E2A;&#x5E03;&#x5C40;&#x89C4;&#x5219;&#x3002;</p>
+<p>&#x8131;&#x79BB;&#x6587;&#x6863;&#x6D41;&#x7684;&#x65B9;&#x5F0F;&#x6709;2&#x79CD;&#xFF1A;&#x6D6E;&#x52A8;&#x548C;&#x5B9A;&#x4F4D;&#x3002;</p>
+<p>float&#x7684;&#x503C;&#x4E3A;left&#x3001;right&#x7684;&#x5143;&#x7D20;&#x8131;&#x79BB;&#x6587;&#x6863;&#x6D41;&#xFF0C;none&#x7684;&#x6CA1;&#x6709;&#x8131;&#x79BB;&#x6587;&#x6863;&#x6D41;&#x3002;
+position&#x7684;&#x503C;&#x4E3A;absolute&#x3001;fixed&#x7684;&#x5143;&#x7D20;&#x8131;&#x79BB;&#x6587;&#x6863;&#x6D41;&#xFF0C;static&#x3001;relative&#x6CA1;&#x6709;&#x8131;&#x79BB;&#x6587;&#x6863;&#x6D41;&#x3002;</p>
+<p>HTML&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x5757;&#x7EA7;(block)&#x5143;&#x7D20;&#x548C;&#x5185;&#x8054;(inline)&#x5143;&#x7D20;(&#x4E5F;&#x53EB;&#x884C;&#x5185;&#x5143;&#x7D20;)2&#x79CD;&#xFF1A;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x72EC;&#x5360;&#x4E00;&#x884C;&#xFF0C;&#x5185;&#x8054;&#x5143;&#x7D20;&#x4E0D;&#x72EC;&#x5360;&#x4E00;&#x884C;&#x3002;</p>
+<p>&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x7684;&#x7279;&#x70B9;&#xFF1A;</p>
+<ol>
+<li>&#x603B;&#x662F;&#x5728;&#x65B0;&#x884C;&#x4E0A;&#x5F00;&#x59CB;&#xFF0C;&#x5360;&#x636E;&#x4E00;&#x6574;&#x884C;</li>
+<li>&#x9AD8;&#x5EA6;&#x3001;&#x884C;&#x9AD8;&#x4EE5;&#x53CA;&#x5185;&#x5916;&#x8FB9;&#x8DDD;&#x90FD;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;</li>
+<li>&#x5BBD;&#x5EA6;&#x59CB;&#x7EC8;&#x4E0E;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x5BBD;&#x5EA6;&#x4E00;&#x81F4;&#xFF0C;&#x4E0E;&#x5185;&#x5BB9;&#x65E0;&#x5173;</li>
+<li>&#x5B83;&#x53EF;&#x4EE5;&#x5BB9;&#x7EB3;&#x5185;&#x8054;&#x5143;&#x7D20;&#x548C;&#x5176;&#x5B83;&#x5757;&#x7EA7;&#x5143;&#x7D20;</li>
+<li>&#x5E38;&#x89C1;&#x7684;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x6709; <code>div&#x3001;h1~h6&#x3001;ul&#x3001;li</code>&#x7B49;</li>
+</ol>
+<p>&#x5185;&#x8054;&#x5143;&#x7D20;&#x7684;&#x7279;&#x70B9;&#xFF1A;</p>
+<ol>
+<li>&#x548C;&#x5176;&#x5B83;&#x7684;&#x5143;&#x7D20;&#x90FD;&#x5728;&#x4E00;&#x884C;&#x4E0A;</li>
+<li>&#x9AD8;&#x5EA6;&#x3001;&#x884C;&#x9AD8;&#x4EE5;&#x53CA;&#x5185;&#x5916;&#x8FB9;&#x8DDD;&#x90E8;&#x5206;&#x53EF;&#x6539;&#x53D8;&#xFF0C;&#x884C;&#x5185;&#x5143;&#x7D20;&#x7684;margin&#x548C;padding&#x5C5E;&#x6027;,&#x6C34;&#x5E73;&#x65B9;&#x5411;&#x7684;padding-left,padding-right,margin-left,margin- right&#x90FD;&#x4EA7;&#x751F;&#x8FB9;&#x8DDD;&#x6548;&#x679C;,&#x4F46;&#x7AD6;&#x76F4;&#x65B9;&#x5411;&#x7684;padding-top,padding-bottom,margin-top,margin-bottom&#x5374;&#x4E0D;&#x4F1A;&#x4EA7;&#x751F;&#x8FB9;&#x8DDD;&#x6548;&#x679C;</li>
+<li>&#x5BBD;&#x5EA6;&#x53EA;&#x4E0E;&#x5185;&#x5BB9;&#x6709;&#x5173;&#xFF0C;</li>
+<li>&#x53EA;&#x80FD;&#x5BB9;&#x7EB3;&#x6587;&#x672C;&#x6216;&#x8005;&#x5176;&#x5B83;&#x5185;&#x8054;&#x5143;&#x7D20;</li>
+<li>&#x4E0D;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x9AD8;&#x5EA6;&#xFF0C;&#x5176;&#x5BBD;&#x5EA6;&#x968F;&#x7740;&#x5185;&#x5BB9;&#x589E;&#x52A0;&#xFF0C;&#x9AD8;&#x5EA6;&#x968F;&#x7740;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x6539;&#x53D8;</li>
+<li>&#x5982;&#x679C;&#x60F3;&#x8BA9;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x5BBD;&#x5EA6;&#x9AD8;&#x5EA6;&#xFF0C;&#x53C8;&#x8BA9;&#x5B83;&#x4EE5;&#x884C;&#x5185;&#x5F62;&#x5F0F;&#x663E;&#x793A;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;display&#x7684;&#x503C;&#x4E3A;inline-block</li>
+<li>&#x5E38;&#x89C1;&#x7684;&#x5185;&#x8054;&#x5143;&#x7D20;&#x6709; a&#x3001;span&#x3001;&#x7B49;</li>
+</ol>
+<h2 id="css&#x76D2;&#x6A21;&#x578B;">CSS&#x76D2;&#x6A21;&#x578B;</h2>
 <ul>
-<li>Uniform Resource Locators (aka URLs) hash#</li>
-<li>Hypertext Transfer Protocol (aka HTTP)</li>
-<li>Hyper Text Markup Language (aka HTML)</li>
-<li>Cascading Style Sheets (aka CSS)</li>
-<li>JavaScript Programming Language (aka ECMAScript 262)</li>
-<li>JavaScript Object Notation (aka JSON)</li>
-<li>Document Object Model (aka DOM)</li>
-<li>Chrome Developer Tools</li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Details_of_the_Object_Model" target="_blank">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Details_of_the_Object_Model</a></li>
+<li>&#x4EE5;&#x65E5;&#x5E38;&#x751F;&#x6D3B;&#x4E2D;&#x89C1;&#x5230;&#x7684;&#x76D2;&#x5B50;&#x4F5C;&#x4E3A;&#x6BD4;&#x55BB;&#x6765;&#x4E3E;&#x4F8B;&#x2014;&#x2014;&#x7531;&#x5185;&#x5BB9;(content)&#x3001;&#x5185;&#x8FB9;&#x8DDD;(padding)&#x3001;&#x8FB9;&#x6846;(border)&#x3001;&#x5916;&#x8FB9;&#x8DDD;(margin)&#x7EC4;&#x6210;&#x3002;</li>
+<li>CSS&#x76D2;&#x5B50;&#x6A21;&#x578B;&#x5C31;&#x662F;&#x5728;&#x7F51;&#x9875;&#x8BBE;&#x8BA1;&#x4E2D;&#x7ECF;&#x5E38;&#x7528;&#x5230;&#x7684;CSS&#x6280;&#x672F;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x4E00;&#x79CD;&#x601D;&#x7EF4;&#x6A21;&#x578B;&#x3002;</li>
+<li>&#x76D2;&#x5B50;&#x7684;&#x5BBD;&#x9AD8;&#x662F;&#x6839;&#x636E;border&#x5F00;&#x59CB;&#x8BA1;&#x7B97;&#x7684;&#xFF0C;&#x4E0D;&#x662F;&#x6839;&#x636E;content&#x8BA1;&#x7B97;&#x7684;&#x3002;&#x63A8;&#x8350;border-box <code>box-sizing: border-box|content-box</code></li>
+</ul>
+<h2 id="&#x5E03;&#x5C40;">&#x5E03;&#x5C40;</h2>
+<h3 id="&#x4E00;&#x884C;&#x4E00;&#x5217;">&#x4E00;&#x884C;&#x4E00;&#x5217;</h3>
+<p>&#x5BBD;&#x5EA6;&#x56FA;&#x5B9A;&#xFF1A;margin: 0 auto;</p>
+<p>&#x5BBD;&#x5EA6;&#x4E0D;&#x56FA;&#x5B9A;&#xFF08;&#x81EA;&#x9002;&#x5E94;&#xFF09;&#xFF1A;width &#x767E;&#x5206;&#x6BD4;</p>
+<h3 id="&#x4E00;&#x884C;&#x4E24;&#x5217;">&#x4E00;&#x884C;&#x4E24;&#x5217;</h3>
+<h4 id="&#x4E00;&#x5217;&#x5B9A;&#x5BBD;&#xFF0C;&#x4E00;&#x5217;&#x4E0D;&#x56FA;&#x5B9A;&#xFF08;&#x81EA;&#x9002;&#x5E94;&#xFF09;">&#x4E00;&#x5217;&#x5B9A;&#x5BBD;&#xFF0C;&#x4E00;&#x5217;&#x4E0D;&#x56FA;&#x5B9A;&#xFF08;&#x81EA;&#x9002;&#x5E94;&#xFF09;</h4>
+<p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1fqdslgbmb1j30bk04q3yq.jpg" alt=""></p>
+<ol>
+<li><p>position:absolute</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content&quot;</span>&gt;</span>content: &#x6B63;&#x5E38;&#x6587;&#x6863;&#x6D41;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav&quot;</span>&gt;</span>nav: absolute<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css">@use postcss-nested;
+.layout {
+  height: 500px;
+
+  .content {
+    height: 5000px;
+    background: #cc9;
+    margin-left: 200px; /* &#x6362;&#x6210;padding-left &#x4E5F;&#x53EF;&#x4EE5; */
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5000px;
+    width: 200px;
+    background: #9c6;
+  }
+}
+</code></pre>
+</li>
+<li><p>float</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav&quot;</span>&gt;</span>nav<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content&quot;</span>&gt;</span>content<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>; <span class="hljs-comment">/* reset body agent style */</span>
+}
+<span class="hljs-selector-class">.layout</span> {
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">600px</span>; <span class="hljs-comment">/* &#x4E3A;&#x4E86;&#x597D;&#x770B; */</span>
+}
+
+<span class="hljs-selector-class">.layout</span> <span class="hljs-selector-class">.nav</span> {
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+  <span class="hljs-attribute">background</span>: <span class="hljs-number">#696</span>;
+  <span class="hljs-attribute">float</span>: left;
+}
+
+<span class="hljs-selector-class">.layout</span> <span class="hljs-selector-class">.content</span> {
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">background</span>: <span class="hljs-number">#fc9</span>;
+}
+</code></pre>
+</li>
+</ol>
+<h4 id="2&#x5217;&#x5BBD;&#x5EA6;&#x90FD;&#x4E0D;&#x56FA;&#x5B9A;-width-&#x767E;&#x5206;&#x6BD4;">2&#x5217;&#x5BBD;&#x5EA6;&#x90FD;&#x4E0D;&#x56FA;&#x5B9A; width &#x767E;&#x5206;&#x6BD4;</h4>
+<h4 id="2&#x5217;&#x5BBD;&#x5EA6;&#x90FD;&#x56FA;&#x5B9A;-&#x76F4;&#x63A5;width">2&#x5217;&#x5BBD;&#x5EA6;&#x90FD;&#x56FA;&#x5B9A; &#x76F4;&#x63A5;width</h4>
+<h3 id="&#x4E00;&#x884C;&#x4E09;&#x5217;">&#x4E00;&#x884C;&#x4E09;&#x5217;</h3>
+<p><em>*</em> 1. &#x5E03;&#x5C40;&#xFF1A;&#x4E09;&#x5217;&#x7ED3;&#x6784;&#x5E03;&#x5C40;&#xFF0C; &#x8981;&#x6C42;&#x5DE6;&#x53F3;2&#x5217;&#x5BBD;&#x5EA6;&#x56FA;&#x5B9A;&#xFF0C;&#x4E2D;&#x95F4;&#x5217;&#x5BBD;&#x5EA6;&#x81EA;&#x9002;&#x5E94;&#x3002;</p>
+<p>&#x5728;2&#x5217;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x8FDB;&#x884C;&#x53D8;&#x6362;&#xFF0C;&#x5E38;&#x89C1;&#x7684;&#x5F62;&#x5F0F;&#x6709;&#xFF1A;</p>
+<p>1&#xFF09;&#x5BBD;&#x5EA6;&#x56FA;&#x5B9A;&#xFF0C;&#x4E09;&#x5217;&#x7B49;&#x5206;</p>
+<ul>
+<li>width:33.33333%</li>
+</ul>
+<p>2&#xFF09;&#x5BBD;&#x5EA6;&#x4E0D;&#x56FA;&#x5B9A;&#xFF0C;&#x7B2C;&#x4E00;&#x5217;&#x3001;&#x7B2C;&#x4E09;&#x5217;&#x5BBD;&#x5EA6;&#x56FA;&#x5B9A;&#xFF0C;&#x4E2D;&#x95F4;&#x5217;&#x81EA;&#x9002;&#x5E94;</p>
+<ul>
+<li>&#x53CC;&#x98DE;&#x7FFC;</li>
+<li>&#x5723;&#x676F;&#x5E03;&#x5C40;</li>
 </ul>
 <h2 id="bfc">BFC</h2>
 <h3 id="&#x5B9A;&#x4E49;">&#x5B9A;&#x4E49;</h3>
@@ -449,6 +588,11 @@ animation-play-state  &#x6307;&#x5B9A;&#x52A8;&#x753B;&#x662F;&#x5426;&#x6B63;&#
 <p>&#x5982;&#x4F55;&#x8BA9;&#x4F60;&#x7684;CSS3&#x52A8;&#x753B;&#x66F4;&#x5177;&#x5438;&#x5F15;&#x529B;
 <a href="https://webdesign.tutsplus.com/zh-hans/tutorials/adding-appeal-to-your-animations-on-the-web--cms-23649" target="_blank">https://webdesign.tutsplus.com/zh-hans/tutorials/adding-appeal-to-your-animations-on-the-web--cms-23649</a></p>
 <h1 id="css-modules">CSS Modules</h1>
+<p>1.&#x5173;&#x4E8E;margin&#x548C;padding&#x5C5E;&#x6027;</p>
+<p>1&#xFF09;&#x82E5;&#x5C5E;&#x6027;&#x8FDE;&#x8D77;&#x6765;&#x5199;&#xFF0C;&#x5219;&#x6839;&#x636E;&#x987A;&#x65F6;&#x9488;&#x6309;&#x4E0A;&#x3001;&#x53F3;&#x3001;&#x4E0B;&#x3001;&#x5DE6;&#x7684;&#x987A;&#x5E8F;&#x89C4;&#x5219;&#x7F29;&#x5199;&#xFF1B;</p>
+<p>2&#xFF09;&#x5F53;&#x4E0A;&#x548C;&#x4E0B;&#x3001;&#x5DE6;&#x548C;&#x53F3;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x4E00;&#x81F4;&#x65F6;&#xFF0C;&#x53EF;&#x7B80;&#x5199;&#x4E3A;&#xFF1A;margin: 40px 50px;</p>
+<p>3&#xFF09;&#x5F53;&#x4E0A;&#x4E0B;&#x5DE6;&#x53F3;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x90FD;&#x4E00;&#x81F4;&#x65F6;&#xFF0C;&#x53EF;&#x7B80;&#x5199;&#x4E3A;&#xFF1A;margin:60px;</p>
+<p>4&#xFF09;&#x5F53;&#x5DE6;&#x53F3;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x4E00;&#x81F4;&#x3001;&#x4E0A;&#x4E0B;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x4E0D;&#x4E00;&#x81F4;&#x65F6;&#xFF0C;&#x53EF;&#x7B80;&#x5199;&#x4E3A; margin: 40px 20px 50px;---&gt;&#x4E0A; &#x5DE6;&#x53F3; &#x4E0B;&#xFF1B;</p>
 
                                 
                                 </section>
@@ -476,7 +620,7 @@ animation-play-state  &#x6307;&#x5B9A;&#x52A8;&#x753B;&#x662F;&#x5426;&#x6B63;&#
 
             
                 
-                <a href="HTML.html" class="navigation navigation-prev " aria-label="Previous page: HTML">
+                <a href="emmet.html" class="navigation navigation-prev " aria-label="Previous page: 快速编写HTML">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -492,7 +636,7 @@ animation-play-state  &#x6307;&#x5B9A;&#x52A8;&#x753B;&#x662F;&#x5426;&#x6B63;&#
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CSS","level":"1.3","depth":1,"next":{"title":"盒模型","level":"1.3.1","depth":2,"path":"box.md","ref":"./box.md","articles":[]},"previous":{"title":"HTML","level":"1.2","depth":1,"path":"HTML.md","ref":"./HTML.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"css.md","mtime":"2019-03-23T06:53:16.464Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-23T10:25:39.989Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"CSS","level":"1.3","depth":1,"next":{"title":"盒模型","level":"1.3.1","depth":2,"path":"box.md","ref":"./box.md","articles":[]},"previous":{"title":"快速编写HTML","level":"1.2.1","depth":2,"path":"emmet.md","ref":"./emmet.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"css.md","mtime":"2019-04-14T10:51:27.466Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-14T15:38:46.894Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

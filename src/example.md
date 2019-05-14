@@ -2,7 +2,7 @@
 
 以著名的[TodoMVC](http://todomvc.com/)作为学习案例，分析和实践vue的用法。
 
-![](https://raw.githubusercontent.com/tastejs/todomvc-app-css/master/screenshot.png)
+![](./imgs/todomvc-screenshot.png)
 
 
 **todomvc**提供了一个[Application Specification](https://github.com/tastejs/todomvc/blob/master/app-spec.md)规格说明书来描述App的结构和功能等。

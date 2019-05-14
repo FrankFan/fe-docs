@@ -44,7 +44,7 @@ typeof null; // "object"
 typeof not_defined_var; // "undefined"
 ```
 
-![](https://ws1.sinaimg.cn/large/006tNbRwgy1fxecxl49umj306q0dxq3v.jpg)
+![](./imgs/js-typeof.jpg)
 
 ### 判断具体类型
 
@@ -80,7 +80,7 @@ var type = obj => {
 };
 ```
 
-![示例](https://ws3.sinaimg.cn/large/006tNc79gy1g1yzkx23w8j306j0diwf4.jpg)
+![示例](./imgs/js-type.jpg)
 
 ### 类型转换
 

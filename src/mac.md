@@ -34,11 +34,17 @@ Enable word jumps and word deletion, aka natural text selection
 
 By default, word jumps (option + → or ←) and word deletions (option + backspace) do not work. To enable these, go to "iTerm → Preferences → Profiles → Keys → Load Preset... → Natural Text Editing → Boom! Head explodes"
 
-![](https://ws4.sinaimg.cn/large/006tNbRwgy1fxgx7y7hm1j31hv0u0187.jpg)
+![](./imgs/iterm2-select-mode.jpg)
 
 ## iPic
 
 图床工具
+
+## 动图制作工具
+
+GIPHY CAPTURE
+
+![](./imgs/giphy.png)
 
 ## nvm
 

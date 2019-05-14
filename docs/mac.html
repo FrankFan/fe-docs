@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Mac安装 · GitBook</title>
+        <title>Mac装机必备 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -56,6 +56,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
+    
+    <link rel="next" href="ssh-config.html" />
     
     
     <link rel="prev" href="webkit-inside.html" />
@@ -110,6 +112,25 @@
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="emmet.html">
+            
+                <a href="emmet.html">
+            
+                    
+                    快速编写HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -250,6 +271,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.4.4" data-path="reduce.html">
+            
+                <a href="reduce.html">
+            
+                    
+                    reduce
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -357,7 +391,20 @@
                 <a href="mac.html">
             
                     
-                    Mac安装
+                    Mac装机必备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ssh-config.html">
+            
+                <a href="ssh-config.html">
+            
+                    
+                    ssh管理
             
                 </a>
             
@@ -395,7 +442,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Mac安装</a>
+        <a href="." >Mac装机必备</a>
     </h1>
 </div>
 
@@ -411,13 +458,17 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x5B89;&#x88C5;mac">&#x5B89;&#x88C5;Mac</h1>
-<h2 id="&#x5B89;&#x88C5;&#x8F6F;&#x4EF6;&#x795E;&#x5668;">&#x5B89;&#x88C5;&#x8F6F;&#x4EF6;&#x795E;&#x5668;</h2>
-<pre><code>brew search
-brew list
-brew install xxx
-brew cask install xxx
-brew cask install shadowsocksx charles wechat visual-studio-code
-</code></pre><h2 id="zsh&#x5173;&#x952E;&#x5B57;&#x9AD8;&#x4EAE;&#x63D2;&#x4EF6;-zsh-syntax-highlighting">zsh&#x5173;&#x952E;&#x5B57;&#x9AD8;&#x4EAE;&#x63D2;&#x4EF6; zsh-syntax-highlighting</h2>
+<h2 id="mac&#x4E0B;&#x8F6F;&#x4EF6;&#x5B89;&#x88C5;&#x795E;&#x5668;-brew">Mac&#x4E0B;&#x8F6F;&#x4EF6;&#x5B89;&#x88C5;&#x795E;&#x5668; brew</h2>
+<pre><code class="lang-bash"><span class="hljs-comment">## &#x5B89;&#x88C5;brew https://brew.sh/</span>
+$ brew search
+$ brew list
+$ brew install xxx
+$ brew cask install xxx
+$ brew cask install shadowsocksx charles wechat visual-studio-code
+</code></pre>
+<h2 id="&#x5B89;&#x88C5;on-my-zsh">&#x5B89;&#x88C5;on-my-zsh</h2>
+<p><a href="http://ohmyz.sh/" target="_blank">http://ohmyz.sh/</a></p>
+<h2 id="zsh&#x5173;&#x952E;&#x5B57;&#x9AD8;&#x4EAE;&#x63D2;&#x4EF6;-zsh-syntax-highlighting">zsh&#x5173;&#x952E;&#x5B57;&#x9AD8;&#x4EAE;&#x63D2;&#x4EF6; zsh-syntax-highlighting</h2>
 <pre><code>brew install zsh-syntax-highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 </code></pre><h2 id="zsh-autosuggestions-&#x81EA;&#x52A8;&#x63D0;&#x793A;&#x63D2;&#x4EF6;">zsh-autosuggestions &#x81EA;&#x52A8;&#x63D0;&#x793A;&#x63D2;&#x4EF6;</h2>
@@ -425,9 +476,12 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 <h2 id="iterm2&#x542F;&#x7528;&#x8BCD;&#x8BED;&#x9009;&#x62E9;">iTerm2&#x542F;&#x7528;&#x8BCD;&#x8BED;&#x9009;&#x62E9;</h2>
 <p>Enable word jumps and word deletion, aka natural text selection</p>
 <p>By default, word jumps (option + &#x2192; or &#x2190;) and word deletions (option + backspace) do not work. To enable these, go to &quot;iTerm &#x2192; Preferences &#x2192; Profiles &#x2192; Keys &#x2192; Load Preset... &#x2192; Natural Text Editing &#x2192; Boom! Head explodes&quot;</p>
-<p><img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fxgx7y7hm1j31hv0u0187.jpg" alt=""></p>
+<p><img src="imgs/iterm2-select-mode.jpg" alt=""></p>
 <h2 id="ipic">iPic</h2>
 <p>&#x56FE;&#x5E8A;&#x5DE5;&#x5177;</p>
+<h2 id="&#x52A8;&#x56FE;&#x5236;&#x4F5C;&#x5DE5;&#x5177;">&#x52A8;&#x56FE;&#x5236;&#x4F5C;&#x5DE5;&#x5177;</h2>
+<p>GIPHY CAPTURE</p>
+<p><img src="imgs/giphy.png" alt=""></p>
 <h2 id="nvm">nvm</h2>
 <pre><code class="lang-bash">&#x6307;&#x5B9A;&#x9ED8;&#x8BA4;&#x7248;&#x672C;
 nvm <span class="hljs-built_in">alias</span> default 11.2.0
@@ -436,6 +490,55 @@ nvm <span class="hljs-built_in">alias</span> default 11.2.0
 <p>~/.npm&#x76EE;&#x5F55;&#x6743;&#x9650;&#x95EE;&#x9898;&#xFF0C;</p>
 <pre><code class="lang-bash">sudo chown -R <span class="hljs-variable">$USER</span>:<span class="hljs-variable">$GROUP</span> ~/.npm
 npm cache clean
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x67E5;&#x770B;&#x914D;&#x7F6E;</span>
+$ npm config list
+$ npm config list <span class="hljs-_">-l</span>
+
+<span class="hljs-comment"># &#x8BBE;&#x7F6E;&#x4EE3;&#x7406;</span>
+$ npm config <span class="hljs-built_in">set</span> proxy http://127.0.0.1.8080
+
+<span class="hljs-comment"># &#x4F7F;&#x7528;&#x5B8C;&#x6BD5;</span>
+$ npm config <span class="hljs-built_in">set</span> proxy null
+</code></pre>
+<h2 id="vim-&#x4F7F;&#x7528;">vim &#x4F7F;&#x7528;</h2>
+<p>&#x914D;&#x7F6E; <code>~/.vimrc</code> &#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-bash"><span class="hljs-string">&quot;&#x5173;&#x95ED;&#x517C;&#x5BB9;VI&#x6A21;&#x5F0F;&#xFF08;&#x53EF;&#x9009;&#x9879;&#xFF1A;compatible/nocompatible&#xFF0C;&#x82E5;&#x9009;&#x62E9;&#x4E86;compatible&#x5219;tab&#x4E0D;&#x4F1A;&#x8F6C;&#x6210;&#x7A7A;&#x683C;&#xFF09;
+set nocompatible
+source <span class="hljs-variable">$VIMRUNTIME</span>/vimrc_example.vim
+source <span class="hljs-variable">$VIMRUNTIME</span>/mswin.vim
+&quot;</span>&#x8BBE;&#x7F6E;&#x9F20;&#x6807;&#x8FD0;&#x884C;&#x6A21;&#x5F0F;&#x4E3A;WINDOWS&#x6A21;&#x5F0F;
+behave mswin
+<span class="hljs-string">&quot;&#x5F00;&#x542F;&#x8BED;&#x6CD5;&#x9AD8;&#x4EAE;
+syntax enable
+&quot;</span>&#x884C;&#x53F7;&#x548C;&#x6807;&#x5C3A;
+<span class="hljs-built_in">set</span> number
+<span class="hljs-built_in">set</span> ruler
+<span class="hljs-built_in">set</span> rulerformat=%15(%c%V\ %p%%%)
+<span class="hljs-built_in">set</span> relativenumber                  <span class="hljs-string">&quot;&#x8BBE;&#x7F6E;&#x76F8;&#x5BF9;&#x884C;&#x53F7;
+&quot;</span> &#x72B6;&#x6001;&#x680F;&#x663E;&#x793A;&#x76EE;&#x524D;&#x6240;&#x6267;&#x884C;&#x7684;&#x6307;&#x4EE4;
+<span class="hljs-built_in">set</span> showcmd
+<span class="hljs-string">&quot; &#x7F29;&#x8FDB;
+set autoindent
+set smartindent
+&quot;</span> &#x81EA;&#x52A8;&#x91CD;&#x65B0;&#x8BFB;&#x5165;
+<span class="hljs-built_in">set</span> autoread
+</code></pre>
+<p>&#x5FEB;&#x6377;&#x952E;&#xFF1A;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x79FB;&#x52A8;&#x5149;&#x6807;</span>
+<span class="hljs-comment"># 1. JKLH &#x5206;&#x522B;&#x4EE3;&#x8868; &#x4E0A;&#x4E0B;&#x5DE6;&#x53F3;</span>
+
+<span class="hljs-comment"># &#x7F16;&#x8F91;&#x6A21;&#x5F0F;</span>
+<span class="hljs-comment"># 1. &#x4F7F;&#x7528; i &#x5728;&#x5149;&#x6807;&#x5904;&#x63D2;&#x5165;&#xFF08;insert&#xFF09;&#xFF0C; &#x4F7F;&#x7528; a &#x5728;&#x5149;&#x6807;&#x540E;&#x63D2;&#x5165;&#xFF08;append&#xFF09;</span>
+
+
+<span class="hljs-comment"># &#x590D;&#x5236; &#x548C; &#x7C98;&#x8D34;</span>
+<span class="hljs-comment"># 1. &#x5C06;&#x5149;&#x6807;&#x7F6E;&#x4E8E;&#x4F60;&#x60F3;&#x8981;&#x590D;&#x5236;&#x7684;&#x6587;&#x5B57;&#x5904;</span>
+<span class="hljs-comment"># 2. &#x4F7F;&#x7528; v &#x9009;&#x62E9;&#x5B57;&#x7B26;&#xFF0C; V &#x9009;&#x62E9;&#x6574;&#x884C;</span>
+<span class="hljs-comment"># 3. &#x79FB;&#x52A8;&#x5149;&#x6807;&#x5230;&#x4F60;&#x8981;&#x590D;&#x5236;&#x7684;&#x6587;&#x5B57;&#x7ED3;&#x5C3E;&#x5904;</span>
+<span class="hljs-comment"># 4. &#x4F7F;&#x7528; y &#x590D;&#x5236;&#xFF0C; d &#x526A;&#x5207;</span>
+<span class="hljs-comment"># 5. &#x79FB;&#x52A8;&#x5149;&#x6807;&#x5230;&#x4EFB;&#x4F55;&#x4F60;&#x60F3;&#x8981;&#x7C98;&#x8D34;&#x7684;&#x5730;&#x65B9;</span>
+<span class="hljs-comment"># 6. &#x4F7F;&#x7528; P &#x7C98;&#x8D34;&#x5230;&#x5149;&#x6807;&#x524D;&#xFF0C; p&#x7C98;&#x8D34;&#x5230;&#x5149;&#x6807;&#x540E;</span>
 </code></pre>
 <h1 id="linux-&#x6587;&#x4EF6;&#x6743;&#x9650;">Linux &#x6587;&#x4EF6;&#x6743;&#x9650;</h1>
 <h2 id="&#x67E5;&#x770B;&#x6743;&#x9650;">&#x67E5;&#x770B;&#x6743;&#x9650;</h2>
@@ -464,11 +567,11 @@ l &#x8F6F;&#x94FE;&#x63A5;&#x6587;&#x4EF6;</li>
 </ul>
 </li>
 </ul>
-<pre><code class="lang-bash">$ chmod u+x ccangls.av
+<pre><code class="lang-bash">$ chmod u+x file1
 
-$ chmod g+w,o+w furong.av
+$ chmod g+w,o+w file2
 
-$ chmod a=rwx fengjie.av
+$ chmod a=rwx filex
 </code></pre>
 <p>&#x4EE5;&#x4E0A;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x4E0D;&#x591F;&#x7B80;&#x4FBF;&#xFF0C;&#x5728;&#x5B9E;&#x9645;&#x5E94;&#x7528;&#x4E2D;&#x5F88;&#x5C11;&#x4F7F;&#x7528;&#x3002;</p>
 <p>&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x6743;&#x9650;&#x7684;&#x6570;&#x5B57;&#x8868;&#x793A;&#x65B9;&#x5F0F;&#xFF1A;
@@ -481,6 +584,77 @@ x -- 1</p>
 6  4  4    &#x666E;&#x901A;&#x6587;&#x4EF6;&#x6743;&#x9650;</p>
 <p>rwxrwxrwx
 7  7  7    &#x6700;&#x9AD8;&#x6743;&#x9650;</p>
+<h2 id="&#x5E38;&#x7528;&#x547D;&#x4EE4;">&#x5E38;&#x7528;&#x547D;&#x4EE4;</h2>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x67E5;&#x770B;&#x786C;&#x76D8;&#x4F7F;&#x7528;&#x7A7A;&#x95F4;</span>
+$ du <span class="hljs-_">-d</span> 1 -h
+</code></pre>
+<h2 id="&#x5B9E;&#x73B0;&#x7EC8;&#x7AEF;&#x547D;&#x4EE4;&#x884C;cli&#x7FFB;&#x5899;&#x6548;&#x679C;">&#x5B9E;&#x73B0;&#x7EC8;&#x7AEF;&#x547D;&#x4EE4;&#x884C;CLI&#x7FFB;&#x5899;&#x6548;&#x679C;</h2>
+<p>&#x914D;&#x7F6E;&#xFF1A;
+&#x4FEE;&#x6539;<code>~/.zshrc</code>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x589E;&#x52A0;&#x4EE5;&#x4E0B;2&#x884C;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># proxy list</span>
+<span class="hljs-built_in">alias</span> proxy=<span class="hljs-string">&apos;export all_proxy=socks5://127.0.0.1:1080&apos;</span>
+<span class="hljs-built_in">alias</span> unproxy=<span class="hljs-string">&apos;unset all_proxy&apos;</span>
+</code></pre>
+<p>&#x6D4B;&#x8BD5;&#xFF1A;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x672A;&#x8FD0;&#x884C; proxy &#x547D;&#x4EE4;&#x524D;</span>
+$ curl cip.cc
+IP    : 58.247.11.227
+&#x5730;&#x5740;    : &#x4E2D;&#x56FD;  &#x4E0A;&#x6D77;
+&#x8FD0;&#x8425;&#x5546;    : &#x8054;&#x901A;
+
+&#x6570;&#x636E;&#x4E8C;    : &#x4E0A;&#x6D77;&#x5E02; | &#x8054;&#x901A;
+
+&#x6570;&#x636E;&#x4E09;    : &#x4E2D;&#x56FD;&#x4E0A;&#x6D77;&#x4E0A;&#x6D77;&#x5E02; | &#x8054;&#x901A;
+
+URL    : http://www.cip.cc/58.247.11.227
+
+<span class="hljs-comment"># &#x8FD0;&#x884C; proxy &#x547D;&#x4EE4;</span>
+$ proxy
+$ curl cip.cc
+IP    : 3.16.15.181
+&#x5730;&#x5740;    : &#x7F8E;&#x56FD;  &#x7F8E;&#x56FD;
+
+&#x6570;&#x636E;&#x4E8C;    : &#x7F8E;&#x56FD; | Amazon EC2&#x670D;&#x52A1;&#x5668;
+
+&#x6570;&#x636E;&#x4E09;    : &#x7F8E;&#x56FD;&#x534E;&#x76DB;&#x987F; | &#x4E9A;&#x9A6C;&#x900A;
+
+URL    : http://www.cip.cc/3.16.15.181
+
+<span class="hljs-comment"># &#x7FFB;&#x5899;&#x6210;&#x529F;&#xFF0C;&#x5C3D;&#x60C5;&#x7684;npm install&#x5427;</span>
+</code></pre>
+<h2 id="&#x5E38;&#x7528;linux&#x547D;&#x4EE4;">&#x5E38;&#x7528;Linux&#x547D;&#x4EE4;</h2>
+<h3 id="scp">scp</h3>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x767B;&#x5F55;&#x8DF3;&#x677F;&#x673A;</span>
+$ jump
+$ mkdir /tmp/hybird
+<span class="hljs-comment"># &#x56DE;&#x5230;&#x672C;&#x673A;&#xFF0C;scp&#x5230;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x7684;tmp&#x76EE;&#x5F55;</span>
+$ scp your_<span class="hljs-built_in">local</span>_file root@172.19.15.8:/tmp/workspace
+$ ssh root@172.19.15.8
+</code></pre>
+<h3 id="&#x67E5;&#x770B;size">&#x67E5;&#x770B;size</h3>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x67E5;&#x770B;&#x76EE;&#x5F55;&#x5927;&#x5C0F;&#xFF1A;</span>
+$ du -h <span class="hljs-_">-d</span> 1 ~/gitlab
+<span class="hljs-comment"># &#x67E5;&#x770B;&#x78C1;&#x76D8;&#x5BB9;&#x91CF;</span>
+$ df -h
+</code></pre>
+<h2 id="&#x5E38;&#x7528;git&#x547D;&#x4EE4;">&#x5E38;&#x7528;git&#x547D;&#x4EE4;</h2>
+<h3 id="&#x5220;&#x9664;&#x5206;&#x652F;">&#x5220;&#x9664;&#x5206;&#x652F;</h3>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x5220;&#x9664;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</span>
+$ git push origin --delete feature/<span class="hljs-built_in">test</span>1
+$ git push origin :feature/<span class="hljs-built_in">test</span>1
+
+&#x5220;&#x9664;&#x672C;&#x5730;&#x5206;&#x652F;&#xFF1A;
+$ git branch <span class="hljs-_">-d</span> feature/<span class="hljs-built_in">test</span>
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x5220;&#x9664;&#x672A;track&#x7684;&#x76EE;&#x5F55;&#x4EE5;&#x53CA;&#x6587;&#x4EF6;</span>
+$ git clean -fd
+
+<span class="hljs-comment"># &#x5F3A;&#x5236;&#x6E05;&#x9664;&#x672C;&#x5730;&#x6539;&#x52A8;</span>
+$ git checkout <span class="hljs-_">-f</span>
+
+<span class="hljs-comment"># &#x628A;&#x522B;&#x7684;commit id &#x5408;&#x5E76;&#x5230;&#x5F53;&#x524D;&#x5206;&#x652F;</span>
+$ git cherry-pick [commit id]
+</code></pre>
 
                                 
                                 </section>
@@ -508,10 +682,14 @@ x -- 1</p>
 
             
                 
-                <a href="webkit-inside.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: WebKit技术内幕">
+                <a href="webkit-inside.html" class="navigation navigation-prev " aria-label="Previous page: WebKit技术内幕">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="ssh-config.html" class="navigation navigation-next " aria-label="Next page: ssh管理">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -520,7 +698,7 @@ x -- 1</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Mac安装","level":"1.9","depth":1,"previous":{"title":"WebKit技术内幕","level":"1.8","depth":1,"path":"webkit-inside.md","ref":"./webkit-inside.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"mac.md","mtime":"2019-03-18T05:19:30.464Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-23T10:25:39.989Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Mac装机必备","level":"1.9","depth":1,"next":{"title":"ssh管理","level":"1.10","depth":1,"path":"ssh-config.md","ref":"./ssh-config.md","articles":[]},"previous":{"title":"WebKit技术内幕","level":"1.8","depth":1,"path":"webkit-inside.md","ref":"./webkit-inside.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"mac.md","mtime":"2019-05-14T15:37:52.274Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-14T15:38:46.894Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Todo3 - umi.js · GitBook</title>
+        <title>ssh管理 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="antd-pro.html" />
     
-    
-    <link rel="prev" href="todo-react.html" />
+    <link rel="prev" href="mac.html" />
     
 
     </head>
@@ -342,7 +340,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6.3" data-path="todo-umi.html">
+        <li class="chapter " data-level="1.6.3" data-path="todo-umi.html">
             
                 <a href="todo-umi.html">
             
@@ -399,7 +397,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="ssh-config.html">
+        <li class="chapter active" data-level="1.10" data-path="ssh-config.html">
             
                 <a href="ssh-config.html">
             
@@ -442,7 +440,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Todo3 - umi.js</a>
+        <a href="." >ssh管理</a>
     </h1>
 </div>
 
@@ -457,7 +455,56 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="todo3---umijs">Todo3 - umi.js</h1>
+                                <h1 id="&#x7BA1;&#x7406;&#x591A;&#x4E2A;-ssh-key">&#x7BA1;&#x7406;&#x591A;&#x4E2A; ssh key</h1>
+<h2 id="&#x751F;&#x6210;&#x5E76;&#x6DFB;&#x52A0;&#x7B2C;&#x4E00;&#x4E2A;ssh-key">&#x751F;&#x6210;&#x5E76;&#x6DFB;&#x52A0;&#x7B2C;&#x4E00;&#x4E2A;ssh key</h2>
+<p>&#x7B2C;&#x4E00;&#x6B21;&#x4F7F;&#x7528;ssh&#x751F;&#x6210;key&#xFF0C;&#x9ED8;&#x8BA4;&#x4F1A;&#x5728;&#x7528;&#x6237;~&#xFF08;&#x6839;&#x76EE;&#x5F55;&#xFF09;&#x4E0B;&#x751F;&#x6210; id_rsa, id_rsa.pub 2&#x4E2A;&#x6587;&#x4EF6;&#xFF1B;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x6DFB;&#x52A0;&#x591A;&#x4E2A;ssh key&#x65F6;&#x4E5F;&#x4F1A;&#x751F;&#x6210;&#x5BF9;&#x5E94;&#x7684;&#x79C1;&#x94A5;&#x548C;&#x516C;&#x94A5;&#x3002;</p>
+<pre><code class="lang-bash">$ ssh-keygen -t rsa -C <span class="hljs-string">&quot;youremail@yourcompany.com&quot;</span>
+</code></pre>
+<p>&#x5728;Git Bash&#x4E2D;&#x6267;&#x884C;&#x8FD9;&#x6761;&#x547D;&#x4EE4;&#x4E00;&#x8DEF;&#x56DE;&#x8F66;&#xFF0C;&#x4F1A;&#x5728; ~/.ssh/ &#x76EE;&#x5F55;&#x4E0B;&#x751F;&#x6210; id_rsa &#x548C; id_rsa.pub &#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x7528;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x5C06; id_rsa_pub &#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x590D;&#x5236;&#x4E00;&#x4E0B;&#x7C98;&#x8D34;&#x5230;github(gitlab)&#x4E0A;&#x3002;</p>
+<h2 id="&#x751F;&#x6210;&#x5E76;&#x6DFB;&#x52A0;&#x7B2C;&#x4E8C;&#x4E2A;ssh-key">&#x751F;&#x6210;&#x5E76;&#x6DFB;&#x52A0;&#x7B2C;&#x4E8C;&#x4E2A;ssh key</h2>
+<pre><code class="lang-bash">$ ssh-keygen -t rsa -C <span class="hljs-string">&quot;youremail@gmail.com&quot;</span>
+</code></pre>
+<p>&#x6CE8;&#x610F;&#x4E0D;&#x8981;&#x4E00;&#x8DEF;&#x56DE;&#x8F66;&#xFF0C;&#x8981;&#x7ED9;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x8D77;&#x4E00;&#x4E2A;&#x540D;&#x5B57;&#xFF0C; &#x6BD4;&#x5982;&#x53EB; id_rsa_github, &#x6240;&#x4EE5;&#x76F8;&#x5E94;&#x7684;&#x4E5F;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A; id_rsa_github.pub &#x6587;&#x4EF6;&#x3002;</p>
+<p><img src="http://images.cnitblog.com/blog/282019/201409/091222268402433" alt=""></p>
+<p>&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;
+<img src="http://images.cnitblog.com/blog/282019/201409/091222046992263" alt=""></p>
+<h2 id="&#x6DFB;&#x52A0;&#x79C1;&#x94A5;">&#x6DFB;&#x52A0;&#x79C1;&#x94A5;</h2>
+<pre><code class="lang-bash">$ ssh-add ~/.ssh/id_rsa
+$ ssh-add ~/.ssh/id_rsa_github
+</code></pre>
+<p>&#x5982;&#x679C;&#x6267;&#x884C;ssh-add&#x65F6;&#x63D0;&#x793A;&quot;Could not open a connection to your authentication agent&quot;&#xFF0C;&#x53EF;&#x4EE5;&#x73B0;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-bash">$ ssh-agent bash
+</code></pre>
+<p>&#x7136;&#x540E;&#x518D;&#x8FD0;&#x884C;ssh-add&#x547D;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x53EF;&#x4EE5;&#x901A;&#x8FC7; ssh-add -l &#x6765;&#x786E;&#x79C1;&#x94A5;&#x5217;&#x8868;</span>
+$ ssh-add <span class="hljs-_">-l</span>
+
+<span class="hljs-comment"># &#x53EF;&#x4EE5;&#x901A;&#x8FC7; ssh-add -D &#x6765;&#x6E05;&#x7A7A;&#x79C1;&#x94A5;&#x5217;&#x8868;</span>
+$ ssh-add -D
+</code></pre>
+<h2 id="&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;">&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h2>
+<p>&#x5728; ~/.ssh &#x76EE;&#x5F55;&#x4E0B;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;config&#x6587;&#x4EF6;</p>
+<pre><code class="lang-bash">touch config
+</code></pre>
+<p>&#x6DFB;&#x52A0;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># gitlab</span>
+Host gitlab.com
+    HostName gitlab.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_rsa
+
+<span class="hljs-comment"># github</span>
+Host github.com
+    HostName github.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_rsa_github
+</code></pre>
+<h2 id="&#x6D4B;&#x8BD5;">&#x6D4B;&#x8BD5;</h2>
+<pre><code class="lang-bash">$ ssh -T git@github.com
+</code></pre>
+<p>&#x8F93;&#x51FA;
+Hi user! You&apos;ve successfully authenticated, but GitHub does not provide shell access. &#x5C31;&#x8868;&#x793A;&#x6210;&#x529F;&#x7684;&#x8FDE;&#x4E0A;github&#x4E86;</p>
+<p><a href="https://segmentfault.com/q/1010000000835302" target="_blank">https://segmentfault.com/q/1010000000835302</a></p>
 
                                 
                                 </section>
@@ -485,14 +532,10 @@
 
             
                 
-                <a href="todo-react.html" class="navigation navigation-prev " aria-label="Previous page: Todo2 - React & Es6">
+                <a href="mac.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Mac装机必备">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="antd-pro.html" class="navigation navigation-next " aria-label="Next page: ant-design-pro技术栈">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -501,7 +544,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Todo3 - umi.js","level":"1.6.3","depth":2,"next":{"title":"ant-design-pro技术栈","level":"1.7","depth":1,"path":"antd-pro.md","ref":"./antd-pro.md","articles":[]},"previous":{"title":"Todo2 - React & Es6","level":"1.6.2","depth":2,"path":"todo-react.md","ref":"./todo-react.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"todo-umi.md","mtime":"2019-03-24T14:39:37.654Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-14T15:38:46.894Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ssh管理","level":"1.10","depth":1,"previous":{"title":"Mac装机必备","level":"1.9","depth":1,"path":"mac.md","ref":"./mac.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ssh-config.md","mtime":"2019-04-13T03:21:37.061Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-14T15:38:46.894Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

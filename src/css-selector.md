@@ -4,7 +4,7 @@
 
 作者以游戏的形式列举了多个个 CSS 选择器，感兴趣的同学可以尝试一下。
 
-![](https://ws4.sinaimg.cn/large/006tNbRwgy1fx6ime1mfij30kp08k0tz.jpg)
+![](./imgs/css-diner.jpg)
 
 ## 一、基本选择器
 1. 通配选择器*

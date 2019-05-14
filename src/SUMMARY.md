@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [HTML](./HTML.md)
+    * [快速编写HTML](./emmet.md)
 * [CSS](./css.md)
     * [盒模型](./box.md)
     * [选择器](./css-selector.md)

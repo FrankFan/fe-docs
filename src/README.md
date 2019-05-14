@@ -1,9 +1,9 @@
 # Introduction
 
-![](https://frontendmasters.com/books/front-end-handbook/2017/images/web-tech-employed.jpg)
+![](./imgs/web-tech-employed.jpg)
 
 
-![](https://frontendmasters.com/books/front-end-handbook/2017/images/front-end-skills.png)
+![](./imgs/front-end-skills.png)
 
 
 
@@ -15,4 +15,3 @@
 - JavaScript Object Notation (aka JSON)
 - Document Object Model (aka DOM)
 - Chrome Developer Tools
-- https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Details_of_the_Object_Model
