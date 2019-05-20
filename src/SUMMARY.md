@@ -15,6 +15,7 @@
     * [ECMAScript 6](./es6.md)
     * [reduce](./reduce.md)
 * [React.js](./react.md)
+* [前端工程化](./fe-engineering.md)
 * [Exampels](./example.md)
     * [Todo1 - Vue & ES6](./todo-vue1.md)
     * [Todo2 - React & Es6](./todo-react.md)
