@@ -360,7 +360,123 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="antd-pro.html">
+        <li class="chapter " data-level="1.7" data-path="git/git.html">
+            
+                <a href="git/git.html">
+            
+                    
+                    git操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="git/git-checkout.html">
+            
+                <a href="git/git-checkout.html">
+            
+                    
+                    git checkout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="git/git-branch.html">
+            
+                <a href="git/git-branch.html">
+            
+                    
+                    git branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="git/git-log.html">
+            
+                <a href="git/git-log.html">
+            
+                    
+                    git log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="git/git-rebase.html">
+            
+                <a href="git/git-rebase.html">
+            
+                    
+                    git rebase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="git/git-cherry-pick.html">
+            
+                <a href="git/git-cherry-pick.html">
+            
+                    
+                    git cherry-pick
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="linux.html">
+            
+                <a href="linux.html">
+            
+                    
+                    命令操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="zip.html">
+            
+                <a href="zip.html">
+            
+                    
+                    zip
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="antd-pro.html">
             
                 <a href="antd-pro.html">
             
@@ -373,7 +489,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="webkit-inside.html">
+        <li class="chapter " data-level="1.10" data-path="webkit-inside.html">
             
                 <a href="webkit-inside.html">
             
@@ -386,7 +502,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="mac.html">
+        <li class="chapter " data-level="1.11" data-path="mac.html">
             
                 <a href="mac.html">
             
@@ -399,7 +515,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="ssh-config.html">
+        <li class="chapter " data-level="1.12" data-path="ssh-config.html">
             
                 <a href="ssh-config.html">
             
@@ -457,7 +573,100 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="reduce">reduce</h1>
+                                <h1 id="rreduce-in-javascript">Rreduce in JavaScript</h1>
+<p>&#x5F53;&#x6211;&#x9762;&#x8BD5;&#x5019;&#x9009;&#x4EBA;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x5E38;&#x5E38;&#x4F1A;&#x95EE;&#x4E00;&#x4E9B;&#x4ED6;&#x4EEC;&#x7528;&#x8FC7;&#x7684;JS&#x6570;&#x7EC4;&#x7684;&#x539F;&#x751F;&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x4E14;&#x8BA9;&#x4ED6;&#x4EEC;&#x5728;&#x7EB8;&#x4E0A;&#x5B9E;&#x73B0;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x6BD4;&#x5982;<code>some</code>&#x3001;<code>map</code>&#x7B49;&#x3002;&#x5982;&#x679C;&#x6709;&#x4EBA;&#x80FD;&#x8BF4;&#x51FA;&#x6765;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x88AB;&#x5F53;&#x505A;&#x53C2;&#x6570;&#x548C;&#x8FD4;&#x56DE;&#x503C;&#x4F20;&#x6765;&#x4F20;&#x53BB;&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x5C31;&#x4E0D;&#x662F;&#x96BE;&#x4E8B;&#x3002;</p>
+<p><code>reduce</code> &#x65B9;&#x6CD5;&#x662F;&#x6700;&#x5C11;&#x88AB;&#x95EE;&#x53CA;&#x7684;&#x3002;</p>
+<h2 id="reduce-&#x548C;-fold">Reduce &#x548C; Fold</h2>
+<p><code>Reduce</code>&#x662F;&#x4E00;&#x4E2A;&#x9AD8;&#x9636;&#x51FD;&#x6570;&#xFF0C;&#x5728;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x4E2D;&#x901A;&#x5E38;&#x88AB;&#x79F0;&#x4F5C;<code>fold</code>&#x3002;&#x4E8E;&#x6211;&#x800C;&#x8A00;&#xFF0C;&#x548C;<code>reduce</code>&#x76F8;&#x6BD4;&#xFF0C;<code>fold</code>&#x7EDD;&#x5BF9;&#x662F;&#x4E00;&#x4E2A;&#x66F4;&#x597D;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x56E0;&#x4E3A;&#x5728;&#x6211;&#x8111;&#x6D77;&#x91CC;&#x5C31;&#x50CF;&#x6298;&#x53E0;&#x6247;&#x5B50;&#x7684;&#x8FC7;&#x7A0B;&#x3002;</p>
+<p><code>reduce</code>&#x662F;&#x6709;&#x65B9;&#x5411;&#x7684;&#xFF0C;&#x5B83;&#x4ECE;&#x5DE6;&#x81F3;&#x53F3;&#x904D;&#x5386;&#x4E00;&#x4E2A;&#x5217;&#x8868;;<code>reduceRight</code>&#x4ECE;&#x53F3;&#x81F3;&#x5DE6;&#x904D;&#x5386;&#x3002;&#x4E5F;&#x8BB8;&#x4F60;&#x5728;&#x5176;&#x5B83;&#x5730;&#x65B9;&#x770B;&#x5230;&#x8FC7;<code>foldl</code>&#x548C;<code>foldr</code>&#xFF0C;&#x5B83;&#x4EEC;&#x5176;&#x5B9E;&#x8BF4;&#x7684;&#x662F;&#x540C;&#x4E00;&#x56DE;&#x4E8B;&#x513F;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x53EF;&#x8BFB;&#x6027;&#x66F4;&#x5F3A;&#x4E00;&#x4E9B;&#x3002;</p>
+<p>&#x5728; JavaScript &#x4E2D;&#xFF0C;&#x5982;&#x679C;<code>reduce</code>&#x65B9;&#x6CD5;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x521D;&#x59CB;&#x503C;&#x7684;&#x8BDD;&#xFF0C;&#x6570;&#x7EC4;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x5C06;&#x4F1A;&#x88AB;&#x5F53;&#x505A;&#x521D;&#x59CB;&#x503C;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x521D;&#x59CB;&#x503C;&#x662F;1</span>
+[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>].reduce((a, b) =&gt; a + b, <span class="hljs-number">1</span>); <span class="hljs-comment">// 7</span>
+
+<span class="hljs-comment">// &#x5F53;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4E0D;&#x4F20;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6570;&#x7EC4;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x5F53;&#x88AB;&#x5F53;&#x505A;&#x521D;&#x59CB;&#x503C;</span>
+[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>].reduce((a, b) =&gt; a + b); <span class="hljs-comment">// 6</span>
+</code></pre>
+<h2 id="&#x4E24;&#x4E2A;task">&#x4E24;&#x4E2A;task</h2>
+<p>&#x6839;&#x636E;&#x4E0B;&#x9762;&#x7ED9;&#x5B9A;&#x7684;&#x6570;&#x636E;&#x6709;2&#x4E2A;&#x4EFB;&#x52A1;&#xFF0C;&#x4F7F;&#x7528;&#x666E;&#x901A;&#x5FAA;&#x73AF;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> scoreArray = [
+  { name: <span class="hljs-string">&apos;Jim&apos;</span>, score: <span class="hljs-number">99</span> },
+  { name: <span class="hljs-string">&apos;Han&apos;</span>, score: <span class="hljs-number">55</span> },
+  { name: <span class="hljs-string">&apos;Tom&apos;</span>, score: <span class="hljs-number">87</span> },
+  { name: <span class="hljs-string">&apos;Ana&apos;</span>, score: <span class="hljs-number">50</span> }
+];
+</code></pre>
+<h4 id="a-&#x83B7;&#x53D6;&#x6240;&#x6709;&#x9879;&#x7684;&#x603B;&#x5206;">a) &#x83B7;&#x53D6;&#x6240;&#x6709;&#x9879;&#x7684;&#x603B;&#x5206;</h4>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getScoreSum</span>(<span class="hljs-params">array</span>) </span>{
+  <span class="hljs-keyword">let</span> ret = <span class="hljs-number">0</span>;
+  array.forEach(item =&gt; {
+    ret += item.score;
+  });
+  <span class="hljs-keyword">return</span> ret;
+}
+</code></pre>
+<h4 id="b-&#x83B7;&#x53D6;&#x6240;&#x6709;&#x9879;&#x4E2D;&#x7684;&#x6700;&#x9AD8;&#x5206;">b) &#x83B7;&#x53D6;&#x6240;&#x6709;&#x9879;&#x4E2D;&#x7684;&#x6700;&#x9AD8;&#x5206;</h4>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getHighest</span>(<span class="hljs-params">array</span>) </span>{
+  <span class="hljs-keyword">let</span> ret = {};
+  array.forEach(item =&gt; {
+    <span class="hljs-keyword">if</span>(!ret.score || (ret.score &lt; item.score)) {
+      ret = item;
+    }
+  });
+  <span class="hljs-keyword">return</span> ret;
+}
+</code></pre>
+<h2 id="&#x5206;&#x6790;&#x6A21;&#x5F0F;">&#x5206;&#x6790;&#x6A21;&#x5F0F;</h2>
+<p>&#x4E0A;&#x9762;&#x7684;2&#x4E2A;&#x51FD;&#x6570;&#x6709;&#x4E00;&#x4E9B;&#x5171;&#x540C;&#x70B9;&#xFF1A;</p>
+<ol>
+<li>&#x4E00;&#x4E2A;&#x521D;&#x59CB;&#x503C;</li>
+<li>&#x5982;&#x4F55;&#x7528;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x9879;&#x66F4;&#x65B0;&#x521D;&#x59CB;&#x503C;&#x7684;&#x4E00;&#x4E2A;&#x89C4;&#x5219;</li>
+<li>&#x8FD4;&#x56DE;&#x6700;&#x540E;&#x88AB;&#x66F4;&#x65B0;&#x7684;&#x503C;</li>
+</ol>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6765;&#x62BD;&#x8C61;&#x51FA;&#x8FD9;&#x4E2A;&#x6A21;&#x5F0F;&#x3002;&#x4E5F;&#x5C31;&#x662F;<code>Array.prototype.reduce</code>&#x7684;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x5B9E;&#x73B0;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reduce</span>(<span class="hljs-params">array, rule, initial</span>) </span>{
+  <span class="hljs-comment">// &#x521D;&#x59CB;&#x5316;</span>
+  <span class="hljs-keyword">let</span> result = initial;
+  <span class="hljs-comment">// &#x904D;&#x5386;&#x5217;&#x8868;&#xFF0C;&#x6839;&#x636E;&#x81EA;&#x5B9A;&#x4E49;&#x89C4;&#x5219;&#x66F4;&#x65B0;&#x7ED3;&#x679C;</span>
+  array.forEach(item =&gt; {
+    result = rule(result, item);
+  });
+  <span class="hljs-comment">// &#x8FD4;&#x56DE;&#x6700;&#x7EC8;&#x7ED3;&#x679C;</span>
+  <span class="hljs-keyword">return</span> result;
+}
+</code></pre>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x7528;<code>reduce</code>&#x91CD;&#x5199;&#x4E0A;&#x9762;&#x7684;2&#x4E2A;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getScoreSum</span>(<span class="hljs-params">array</span>) </span>{
+  <span class="hljs-keyword">return</span> reduce(array, (ret, item) =&gt; ret + item.score, <span class="hljs-number">0</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getHighest</span>(<span class="hljs-params">array</span>) </span>{
+  <span class="hljs-keyword">return</span> reduce(array, (ret, item) =&gt; {
+    <span class="hljs-keyword">if</span>(!ret.score || (ret.score &lt; item.score)) {
+      ret = item;
+    }
+    <span class="hljs-keyword">return</span> ret;
+  }, {});
+}
+</code></pre>
+<p>&#x4E00;&#x65E6;&#x4F60;&#x8BA4;&#x540C;&#x8FD9;&#x4E00;&#x6A21;&#x5F0F;&#xFF0C;&#x4EE3;&#x7801;&#x5C06;&#x4F1A;&#x66F4;&#x52A0;&#x6613;&#x4E8E;&#x7406;&#x89E3;&#x3002;&#x62BD;&#x8C61;&#x7684;&#x597D;&#x5904;&#x5728;&#x4E8E;&#x89C4;&#x5219;&#x53EF;&#x4EE5;&#x88AB;&#x5355;&#x72EC;&#x5904;&#x7406;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x88AB;&#x590D;&#x7528;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">maxByScore</span>(<span class="hljs-params">a, b</span>) </span>{
+  <span class="hljs-keyword">return</span> a.score &gt; b.score ? a : b;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getHighest</span>(<span class="hljs-params">array</span>) </span>{
+  <span class="hljs-keyword">return</span> reduce(array, maxByScore, {});
+}
+</code></pre>
+<h2 id="&#x4E0D;&#x540C;&#x70B9;">&#x4E0D;&#x540C;&#x70B9;</h2>
+<p>&#x4E0A;&#x9762;&#x7684; <code>getScoreSum()</code> &#x548C; <code>getHighest()</code> &#x65B9;&#x6CD5;&#x4E5F;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5730;&#x65B9;&#x3002;</p>
+<ol>
+<li><code>getScoreSum()</code> &#x8FD4;&#x56DE;<code>number</code>&#x7C7B;&#x578B;</li>
+<li><code>getHightest()</code> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#x548C;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x4E00;&#x6837;&#x3002;</li>
+</ol>
+<p>&#x901A;&#x5E38;&#xFF0C;&#x5F53;&#x8FD4;&#x56DE;&#x503C;&#x548C;&#x548C;&#x6570;&#x7EC4;&#x4E2D;&#x5143;&#x7D20;&#x7C7B;&#x578B;&#x4E0D;&#x540C;&#x7684;&#x65F6;&#x5019;&#x88AB;&#x79F0;&#x4E3A;&#x975E;&#x5BF9;&#x79F0;&#x6027;(asymmetrical)&#xFF0C;&#x53CD;&#x4E4B;&#xFF0C;&#x79F0;&#x4E3A;&#x5BF9;&#x79F0;&#x6027;(symmetrical)&#x3002;</p>
+<h2 id="&#x4E00;&#x4E9B;&#x611F;&#x60F3;">&#x4E00;&#x4E9B;&#x611F;&#x60F3;</h2>
+<p>&#x62BD;&#x8C61;&#x662F;&#x4E00;&#x79CD;&#x601D;&#x7EF4;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6027;&#x80FD;&#x4E0D;&#x662F;&#x5173;&#x952E;&#x7684;&#x8BDD;&#xFF0C;&#x5728;&#x5408;&#x9002;&#x7684;&#x5730;&#x65B9;&#x6211;&#x66F4;&#x503E;&#x5411;&#x4E8E;&#x4F7F;&#x7528;<code>reduce</code>&#x51FD;&#x6570;&#x3002;&#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x8BA9;&#x6211;&#x7528;&#x66F4;&#x5C11;&#x7684;&#x4EE3;&#x7801;&#x5173;&#x6CE8;&#x4E0E;&#x66F4;&#x91CD;&#x8981;&#x7684;&#x5730;&#x65B9;&#x3002;</p>
 <p><a href="https://yuanchuan.name/2019/03/04/the-reduce-function.html" target="_blank">https://yuanchuan.name/2019/03/04/the-reduce-function.html</a></p>
 <p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce" target="_blank">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce</a></p>
 <p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map</a></p>
@@ -504,7 +713,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"reduce","level":"1.4.4","depth":2,"next":{"title":"React.js","level":"1.5","depth":1,"path":"react.md","ref":"./react.md","articles":[]},"previous":{"title":"ECMAScript 6","level":"1.4.3","depth":2,"path":"es6.md","ref":"./es6.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"reduce.md","mtime":"2019-04-13T03:21:37.061Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-14T15:38:46.894Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"reduce","level":"1.4.4","depth":2,"next":{"title":"React.js","level":"1.5","depth":1,"path":"react.md","ref":"./react.md","articles":[]},"previous":{"title":"ECMAScript 6","level":"1.4.3","depth":2,"path":"es6.md","ref":"./es6.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"reduce.md","mtime":"2019-05-16T05:15:37.932Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-20T11:52:10.039Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

@@ -1,7 +1,7 @@
 {
   "name": "fe-docs",
   "version": "1.0.0",
-  "description": "![](https://frontendmasters.com/books/front-end-handbook/2017/images/web-tech-employed.jpg)",
+  "description": "fe docs",
   "main": "index.js",
   "directories": {
     "doc": "docs",
